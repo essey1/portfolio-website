@@ -1,3 +1,7 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
 *,
 *::before,
 *::after {
@@ -7,11 +11,16 @@
 /* Custom properties */
 
 :root {
-    --ff-primary: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    --ff-secondary: Arial, Helvetica, sans-serif;
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Raleway', sans-serif;
 
     --fw-reg: 350;
     --fw-bold: 900;
+
+    --clr-nav: green;
+    --clr-light-background: red;
+    --clr-dark-background: blue;
+    --clr-main: yellow;
 
     --clr-light: #ffffff;
     --clr-dark: #242424;
@@ -118,7 +127,6 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em;
 }
 
-.section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
     font-family: var(--ff-primary);
@@ -150,11 +158,11 @@ header {
     padding: .5em;
     max-height: 3.25rem;
     background: rgb(41, 0, 0);
-    z-index: 10;
+    z-index: 100;
     
 }
 
-.fixed {
+.nav-bar {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -184,13 +192,11 @@ header {
 }
 
 .nav__item + .nav__item {
-    margin-left: 2.5em;
+    margin-left: 1.5em;
 }
 
 .nav__link {
     color: inherit;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
     text-decoration: none;
     display: block;
 }
@@ -205,7 +211,7 @@ header {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     header {
         width: 100%;
         justify-content: space-between;
@@ -214,14 +220,14 @@ header {
         overflow: hidden;
         padding: .5em;
         max-height: 3.25rem;
-        background: var(--clr-dark);
+        background: #000000;
         z-index: 100;
     }
     
-    .fixed {
+    .nav-bar {
         width: 100%;
         align-items: center;
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
     }
     
@@ -256,7 +262,10 @@ header {
         margin: 0;
         padding: 0;
     }
-    
+
+    .nav__item + .nav__item {
+        margin-left: 0;
+    }
     
     .nav__link {
         color: inherit;
@@ -276,7 +285,7 @@ header {
         cursor: pointer;
         position: absolute;
         right: 1em;
-        top: .9em;
+        top: 1em;
         z-index: 1000;
     }
     
@@ -331,6 +340,13 @@ header {
 
 .intro {
     position: relative;
+    background-color: var(--clr-accent);
+    background-image: url(img4.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+    height: 100vh;
 }
 
 @media (min-width: 450px) {
@@ -354,27 +370,14 @@ header {
 /* My services section */
 
 .my-services {
-    background-color: var(--clr-dark-accent);
-    background-image: url(img4.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: var(--clr-light);
+    background-color: var(--clr-light);
     text-align: center;
 }
 
 .section__title--services {
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     position: relative;
-}
-
-.section__title--services::after {
-    content: '';
-    display: block;
-    width: 4em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: currentColor;
-    opacity: 0.25;
+    margin-bottom: 2em;
 }
 
 .service {
@@ -391,6 +394,71 @@ header {
     }
 
     .service + .service {
+        margin-left: 2em;
+    }
+}
+
+/* My projects section */
+
+.my-projects {
+    background-color: var(--clr-dark-accent);
+    background-image: url(img4.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--projects {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--projects::after {
+    content: '';
+    display: block;
+    width: 4em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.25;
+}
+
+.project {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+.project__img{
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+    box-shadow: var(--bs);
+    margin-bottom: 1em;
+}
+
+.project__img:hover,
+.project__items:focus .portfolio__img {
+    transform: scale(1.05, 1.05);
+    opacity: .75;
+}
+
+@media (min-width: 700px) {
+    .projects {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .project {
+        flex: 1 1 400px;
+    }
+
+    .project + .project {
         margin-left: 2em;
     }
 }
@@ -442,6 +510,9 @@ header {
     }
 }
 
+
+
+
 /* Certifications */ 
 
 .my-work {
@@ -460,13 +531,13 @@ header {
 .portfolio__items {
     background: var(--clr-dark-accent);
     overflow: hidden;
+    font-size: 0px;
 }
 
 .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
-    height: 100%;
 }
 
 .portfolio__item:focus {
@@ -539,7 +610,6 @@ p {
   .form {
     width: 100%;
     max-width: 1000px;
-    z-index: 1;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -551,7 +621,6 @@ p {
   
 form {
     padding: 2.3rem 2.2rem;
-    z-index: 10;
     overflow: hidden;
     position: relative;
 }
@@ -600,7 +669,6 @@ form {
     color: var(--clr-light);
     font-size: var(--fs-body);
     pointer-events: none;
-    z-index: 10;
     transition: 0.5s;
   }
   
@@ -637,7 +705,7 @@ form {
     padding: 0 0.4rem;
     color: transparent;
     pointer-events: none;
-    z-index: 5;
+
   }
   
   .input-container span:before,

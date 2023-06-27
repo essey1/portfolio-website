@@ -4,6 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inirial-scale=1.0">
         <title>Essey Araya Portfolio</title>
+
+        <!-- GOOGLE FONT POPPIN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
         
         <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
@@ -17,35 +25,38 @@
     <body>
 
         <header>
-            <div class="fixed">
-            <div class="logo">
-                <img src="logo1.png" alt="">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#aboutMe" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#myWork" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#myWork" class="nav__link">Achievements</a></li>
+                        <li class="nav__item"><a href="#myWork" class="nav__link">Contact Me</a></li>
+                    </ul>
+                </nav>
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#aboutMe" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#myWork" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </div>
         </header>
 
         <main>
             <!-- Introduction -->
             <section class="intro" id="home">
-                <br><br><br><br>
+                <br><br><br>
+                <br><br><br>
                 <h1 class="section__title section__title--intro">
-                    Greetings! <br> My name is <strong>Essey Araya</strong>
+                    Hi, My name is <strong>Essey Araya</strong>
                 </h1>
-                <p class="section__subtitle section__subtitle--intro">Front-end developer</p>
+                <p class="section__subtitle section__subtitle--intro">I build and design web applications.</p>
             </section>
 
-            <!-- My services -->
+            <!-- Services -->
             <section class="my-services" id="services">
                 <h2 class="section__title section__title--services">What I do</h2>
                 <div class="services">
@@ -61,27 +72,60 @@
                             Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.y</p>
                     </div> <!-- / service -->
                 </div> <!-- / services -->
-                <br>
-                <br>
-                <br>
-                <br>
-                <h2 class="section__title section__title--services">My Projects</h2>
-                <div class="services">
-                    <div class="service">
-                        <img src="img1.jpg" class="portfolio__img">
-                        <h3>Web Development</h3>
-                        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. 
-                            Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
-                    </div> <!-- / service -->
-                    
-                    <div class="service">
-                        <img src="img2.png">
-                        <h3>Web Development</h3>
-                        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. 
-                            Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
-                    </div> <!-- / service -->
-                </div> <!-- / services -->
+            </section>
 
+            <!-- Projects -->
+            <section class="my-projects" id="projects">
+                <h2 class="section__title section__title--projects">My Projects</h2>
+                <div class="projects">
+                    <!-- project 01 -->
+                    <div class="project">
+                        <img src="img1.jpg" class="project__img">
+                        <h3>Web Development</h3>
+                        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. 
+                            Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+                    </div> <!-- / project -->
+
+                    <!-- project 02 -->
+                    <div class="project">
+                        <img src="img1.jpg" class="project__img">
+                        <h3>Web Development</h3>
+                        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. 
+                            Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+                    </div> <!-- / project -->
+
+                    <!-- project 03 -->
+                    <div class="project">
+                        <img src="img1.jpg" class="project__img">
+                        <h3>Web Development</h3>
+                        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. 
+                            Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+                    </div> <!-- / project -->
+
+                    <!-- project 04 -->
+                    <div class="project">
+                        <img src="img1.jpg" class="project__img">
+                        <h3>Web Development</h3>
+                        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. 
+                            Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+                    </div> <!-- / project -->
+
+                    <!-- project 05 -->
+                    <div class="project">
+                        <img src="img1.jpg" class="project__img">
+                        <h3>Web Development</h3>
+                        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. 
+                            Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+                    </div> <!-- / project -->
+                    
+                    <!-- project 06 -->
+                    <div class="project">
+                        <img src="img2.png" class="project__img">
+                        <h3>Web Development</h3>
+                        <p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. 
+                            Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</p>
+                    </div> <!-- / project -->
+                </div> <!-- / projects -->
             </section>
 
             <!-- About me -->
