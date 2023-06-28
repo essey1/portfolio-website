@@ -1,3 +1,4 @@
+// Navigation bar
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link')
 
@@ -11,15 +12,14 @@ navLinks.forEach(link => {
     })
 })
 
-
-
+// Contact me form
 const inputs = document.querySelectorAll(".input");
-function focusFunc() {
+function addFocus() {
   let parent = this.parentNode;
   parent.classList.add("focus");
 }
 
-function blurFunc() {
+function removeFocus() {
   let parent = this.parentNode;
   if (this.value == "") {
     parent.classList.remove("focus");
@@ -27,6 +27,6 @@ function blurFunc() {
 }
 
 inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunc);
-  input.addEventListener("blur", blurFunc);
+  input.addEventListener("focus", addFocus);
+  input.addEventListener("blur", removeFocus);
 });
