@@ -49,22 +49,22 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: .5em;
+    width: .35em;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: var(--clr-accent);
+    background: #6f8a7f;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #00492b;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #67b48d;
   }
 
 html {
@@ -126,7 +126,7 @@ header {
     width: 100%;
     padding: .5em;
     max-height: 3.25rem;
-    background: rgb(41, 0, 0);
+    background: rgb(4, 50, 35);
     z-index: 100;
     
 }
@@ -141,9 +141,9 @@ header {
 }
 
 .logo {
-    max-width: 2em;
+    max-width: 8em;
     display: inline;
-    margin-left: .6em;
+    margin-left: .25em;
 }
 
 .nav__list {
@@ -189,7 +189,7 @@ header {
         overflow: hidden;
         padding: .5em;
         max-height: 3.25rem;
-        background: #000000;
+        background: rgb(4, 50, 35);
         z-index: 100;
     }
     
@@ -201,15 +201,15 @@ header {
     }
     
     .logo {
-        max-width: 1.75em;
+        max-width: 10em;
         display: block;
         margin-left: 1em;
-        margin-top: .125em;
+        margin-top: .175em;
     }
     
     .nav {
         position: fixed;
-        background: var(--clr-dark-accent);
+        background: rgb(0, 78, 46);
         color: var(--clr-light);
         top: 0;
         bottom: 0;
@@ -286,7 +286,7 @@ header {
     .hamburger,
     .hamburger::before,
     .hamburger::after {
-        background: var(--clr-accent);
+        background: var(--clr-light);
         width: 1.65em;
         height: 3px;
         border-radius: 1em;
@@ -309,18 +309,17 @@ header {
 
 .intro {
     position: relative;
-    background-color: var(--clr-dark-accent);
-    background-image: url(img4.jpg);
+    background-color: rgb(34, 37, 35);
+    background-image: url(3.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
-    min-height: 100vh;
 }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
-    margin-top: 20vh; 
+    margin-top: 15vh; 
 }
 
 .section__title--intro strong {
@@ -335,6 +334,44 @@ header {
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 2em;
+}
+
+.intro__cv {
+    text-decoration: none;
+    color: rgb(168, 255, 214);
+    border: 1px solid rgb(168, 255, 214);
+    padding: .5em 1.5rem;
+    transition: 
+        transform 250ms cubic-bezier(.5, 0, .5, 1), 
+        opacity 250ms linear;
+}
+
+.intro__cv:hover {
+    opacity: .6;
+}
+
+.social-list__link:hover {
+    opacity: .6;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+    font-size: var(--fs-h2);
+    margin-bottom: 8vh;
+}
+
+.social-list__link {
+    color: rgb(168, 255, 214);
+    transition: 
+        transform 250ms cubic-bezier(.5, 0, .5, 1), 
+        opacity 250ms linear;
 }
 
 @media (min-width: 450px) {
@@ -355,40 +392,25 @@ header {
     }
 }
 
-.intro__cv {
-    text-decoration: none;
-    color: var(--clr-nav);
-    border: 1px solid var(--clr-nav);
-    padding: .5em 1.5rem;
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1), 
-        opacity 250ms linear;
-}
-
-.intro__cv:hover {
-    transform: scale(1.05, 1.05);
-    opacity: .5;
-}
-
 /* My services section */
 
 .my-services {
     background-color: var(--clr-light);
     text-align: center;
-    min-height: 100vh;
 
 }
 
 .section__title--services {
     color: var(--clr-dark);
     position: relative;
-    margin: 1.25em 0 2em 0;
+    margin: 1em 0 2em 0;
 }
 
 .service {
     max-width: 500px;
     margin: 0 auto;
     padding: .5em;
+    margin-bottom: 1.25em;
 }
 
 @media (min-width: 700px) {
@@ -406,8 +428,8 @@ header {
 /* My projects section */
 
 .my-projects {
-    background-color: var(--clr-dark-accent);
-    background-image: url(img4.jpg);
+    background-color: #2e4d41;
+    background-image: url(2.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
@@ -514,7 +536,6 @@ header {
         height: 80%;
         position: relative;
         z-index: 2;
-        
     }
 }
 
@@ -587,29 +608,11 @@ header {
     display: flex;
 }
 
-.social-list__link:hover {
-    opacity: .7;
-}
-
 .footer__link:hover {
     text-decoration: underline;
 }
 
-.social-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
 
-.social-list__item {
-    margin: 0 .5em;
-    font-size: var(--fs-h2);
-}
-
-.social-list__link {
-    color: var(--clr-nav);
-}
 
 .contact-form {
     position: relative;
@@ -703,10 +706,6 @@ textarea.input {
     .contact-info__name,
     .contact-info__email {
         text-align: start;
-    }
-
-    .social-list {
-        justify-content: start;
     }
 }
   
