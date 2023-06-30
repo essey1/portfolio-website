@@ -5,13 +5,6 @@
         <meta name="viewport" content="width=device-width, inirial-scale=1.0">
         <title>Essey Araya Portfolio</title>
 
-        <!-- GOOGLE FONT POPPIN -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-            rel="stylesheet"
-        />
         
         <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
@@ -34,12 +27,12 @@
                 </button>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#aboutMe" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#achievements" class="nav__link">About Me</a></li>
-                        <li class="nav__item"><a href="#myWork" class="nav__link">Achievements</a></li>
-                        <li class="nav__item"><a href="#myWork" class="nav__link">Contact Me</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#aboutMe" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
+                        <li class="nav__item"><a href="#contactMe" class="nav__link">Contact Me</a></li>
                     </ul>
                 </nav>
             </div>
@@ -49,9 +42,9 @@
             <!-- Introduction -->
             <section class="intro" id="home">
                 <h1 class="section__title section__title--intro">
-                    Hi, my name is <strong>ESSEY ARAYA</strong>
+                    Hi, my name is <strong>Essey Araya</strong>
                 </h1>
-                <p class="section__subtitle section__subtitle--intro">I build and design web applications.</p>
+                <p class="section__subtitle section__subtitle--intro">I build and design web apps.</p>
                 <div class="section__socials">
                     <a href="#" class="intro__cv">Download CV</a>
                     <ul class="social-list">
@@ -203,49 +196,52 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer"> 
+        <footer class="footer" id="contactMe"> 
                 <div class="footer__contact-info">
                     <h3 class="contact-info__name">Full Name <br> Essey Tesfamichael Araya</h3>
-                    <h3 class="contact-info__email">Email <br> esset3@gmail.com</h3>
+                    <h3 class="contact-info__email">Email <br><a class="footer__email" href="mailto:esseyt3@gmail.com">esseyt3@gmail.com</a></h3>
                     
-                    <ul class="social-list">
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="#">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-list__item">
+                            <a class="footer__social-list__link" href="#">
                                 <i class="fa-brands fa-codepen"></i>
                             </a>    
                         </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="#">
+                        <li class="footer__social-list__item">
+                            <a class="footer__social-list__link" href="#">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </li>
-                        <li class="social-list__item">
-                            <a class="social-list__link" href="#">
+                        <li class="footer__social-list__item">
+                            <a class="footer__social-list__link" href="#">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <form action="#" class="footer__contact-form" autocomplete="off">
+                <form action="https://formspree.io/f/mzblpkly" method="POST" class="footer__contact-form" id="contactForm" autocomplete="off">
                     <h2 class="section__title section__title--form">Contact me</h2>
                     <div class="input-container">
-                        <input type="text" name="name" class="input" />
+                        <input type="text" name="name" class="input" required/>
                         <label for="">Full Name</label>
                     </div>
                     <div class="input-container">
-                        <input type="email" name="email" class="input" />
+                        <input type="email" name="email" class="input" required/>
                         <label for="">Email</label>
                     </div>
                     <div class="input-container">
-                        <input type="text" name="subject" class="input" />
+                        <input type="text" name="subject" class="input" required/>
                         <label for="">Subject</label>
                     </div>
                     <div class="input-container textarea">
-                        <textarea name="message" class="input"></textarea>
+                        <textarea name="message" class="input" required></textarea>
                         <label for="">Message</label>
                     </div>
-                    <input type="submit" value="send" class="contact-btn" />
+                    <button type="submit" value="send" class="contact-btn">
+                        Send Message&nbsp
+                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i>
+                    </button>
                 </form>
         </footer>
         

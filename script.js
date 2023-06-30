@@ -30,3 +30,12 @@ inputs.forEach((input) => {
   input.addEventListener("focus", addFocus);
   input.addEventListener("blur", removeFocus);
 });
+
+// Clear all the input values after the user submits the form
+const formToReset = document.getElementById('contactForm');
+formToReset.addEventListener('submit', (e) => {
+   setTimeout(function() { 
+    e.preventDefault();
+    formToReset.reset();
+   }, 1);
+});
