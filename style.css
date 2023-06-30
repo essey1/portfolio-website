@@ -27,9 +27,9 @@
     --clr-dark-accent: #362a00d2;
     --clr-accent: #cabe13f3;
 
-    --fs-h1: 2rem;
-    --fs-h2: .75rem;
-    --fs-body: 1rem;
+    --fs-h1: 1.8rem;
+    --fs-h2: 1.1rem;
+    --fs-body: .8rem;
 
     --bs: .25em .25em .75em rgba(0,0,0,.25),
             .125em .125em .25em rgba(0,0,0,.15);
@@ -104,6 +104,7 @@ h3 {
 }
 
 h1 {
+    text-transform: uppercase;
     line-height: 1.2; 
     font-family: var(--ff-title);
     color: #f5f5f5;
@@ -339,9 +340,8 @@ header {
 }
 
 .section__subtitle--intro {
-    text-transform: uppercase;
     font-size: var(--fs-h2);
-    line-height: 1.2; 
+    line-height: 1; 
     font-family: var(--ff-title);
     text-align: center;
     max-width: 1000px;
@@ -353,10 +353,11 @@ header {
 }
 
 .intro__cv {
+    font-size: var(--fs-body);
     text-decoration: none;
     color: rgb(168, 255, 214);
     border: 1px solid rgb(168, 255, 214);
-    padding: .5em 1.5rem;
+    padding: .4em .5rem;
     transition: 
         transform 250ms cubic-bezier(.5, 0, .5, 1), 
         opacity 250ms linear;
