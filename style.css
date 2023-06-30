@@ -14,33 +14,40 @@
     --ff-text: 'Poppins', sans-serif;
     --ff-title: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-    --fw-reg: 350;
-    --fw-bold: 900;
+    --fw-light: 300;
+    --fw-medium: 400;
+    --fw-bold: 800;
 
-    --clr-nav: green;
-    --clr-light-background: red;
-    --clr-dark-background: blue;
-    --clr-main: yellow;
+    --clr-dark: rgb(14, 24, 26);
+    --clr-white: rgb(255, 255, 255);
+    --clr-dark-accent: rgb(4, 50, 35);
+    --clr-accent: rgb(42, 124, 83);
+    --clr-light-accent: rgb(103, 172, 151);
 
-    --clr-light: #ffffff;
-    --clr-dark: #242424;
-    --clr-dark-accent: #362a00d2;
-    --clr-accent: #cabe13f3;
-
-    --fs-h1: 1.8rem;
-    --fs-h2: 1.1rem;
-    --fs-body: .8rem;
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 1rem;
+    --fs-body: 1rem;
 
     --bs: .25em .25em .75em rgba(0,0,0,.25),
             .125em .125em .25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 450px) {
     :root {
-        --fs-h1: 3rem;
-        --fs-h2: 2rem;
+        --fs-h1: 2.5rem;
+        --fs-h2: 1.75rem;
         --fs-h3: 1.25rem;
         --fs-body: 1.1rem;
+    }
+}
+
+@media (min-width: 850px) {
+    :root {
+        --fs-h1: 3.25rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.2rem;
     }
 }
 
@@ -72,11 +79,12 @@ html {
 }
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-white);
+    color: #000;
     margin: 0;
     font-family: var(--ff-text);
     font-size: var(--fs-body);
+    font-weight: var(--fw-light);
     line-height: 1.6;
 
 }
@@ -99,7 +107,7 @@ strong {
 h1,
 h2,
 h3 {
-    line-height: 1;
+    line-height: 1.2;
     margin: 0;
 }
 
@@ -112,7 +120,7 @@ h1 {
 
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
+h3 { font-size: var(--fs-body) }
 
 .section__title {
     margin-bottom: .25em;
@@ -131,9 +139,8 @@ header {
     width: 100%;
     padding: .5em;
     max-height: 3.25rem;
-    background: rgb(4, 50, 35);
+    background: var(--clr-dark-accent);
     z-index: 100;
-    
 }
 
 .nav-bar {
@@ -159,7 +166,7 @@ header {
     margin-top: .25em;
     padding: 0;
     padding-bottom: .65em;
-    color: var(--clr-light);
+    color: var(--clr-white);
 }
 
 .nav__item {
@@ -175,7 +182,7 @@ header {
     color: inherit;
     text-decoration: none;
     display: block;
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-light);
     font-size: var(--fs-body);
     transition:
         150ms cubic-bezier(.5, 0, .5, 1), 
@@ -190,7 +197,6 @@ header {
     opacity: 5;
 }
 
-
 .nav-toggle {
     display: none;
 }
@@ -198,15 +204,9 @@ header {
 
 @media (max-width: 1000px) {
     header {
-        width: 100%;
         justify-content: space-between;
         align-items: center;
-        position: fixed;
         overflow: hidden;
-        padding: .5em;
-        max-height: 3.25rem;
-        background: rgb(4, 50, 35);
-        z-index: 100;
     }
     
     .nav-bar {
@@ -223,13 +223,14 @@ header {
     
     .nav {
         position: fixed;
-        background: rgb(2, 56, 47);
-        color: var(--clr-light);
+        background: var(--clr-accent);
+        color: var(--clr-white);
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         z-index: 100;
+        border-top-left-radius: 1.5em;
     
         transform: translateX(100%);
         transition: transform 150ms cubic-bezier(.5, 0, .5, 1);
@@ -242,7 +243,7 @@ header {
         flex-direction: column;
         line-height: 3;
         align-items: start;
-        margin: 2em;
+        margin: 0 0 0 2em;
         margin-top: 3em;
         padding: 0;
     }
@@ -252,7 +253,9 @@ header {
     }
     
     .nav__link {        
-        font-weight: 500;
+        margin-bottom: 2.5vh;
+        margin-top: 0;
+        font-weight: var(--fw-medium);
     }
     
     .nav-toggle {
@@ -294,7 +297,7 @@ header {
     .hamburger,
     .hamburger::before,
     .hamburger::after {
-        background: var(--clr-light);
+        background: var(--clr-white);
         width: 1.65em;
         height: 3px;
         border-radius: 1em;
@@ -317,22 +320,19 @@ header {
 
 .intro {
     position: relative;
-    background-color: rgb(0, 94, 78);
+    background-color: var(--clr-dark);
     background-image: url(3.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    color: var(--clr-light);
+    color: var(--clr-white);
     text-align: center;
     
 }
 
 .section__title--intro {
     font-size: var(--fs-h1);
-    font-weight: var(--fw-reg);
-    margin-top: 15vh;
-    margin-bottom: 0;
-    padding-bottom: .35em;
-
+    font-weight: var(--fw-light);
+    margin-top: 10vh;
 }
 
 .section__title--intro strong {
@@ -340,24 +340,30 @@ header {
 }
 
 .section__subtitle--intro {
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3);
     line-height: 1; 
     font-family: var(--ff-title);
     text-align: center;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
-    padding-top: 0;
+    padding: 0 0 1em 0;
     margin-bottom: 2.5em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid rgb(130, 236, 210);
+    border-bottom: 1px solid var(--clr-light-accent);
+}
+
+@media (max-width: 900px) {
+    .section__subtitle--intro {
+        max-width: 650px;
+    }
 }
 
 .intro__cv {
     font-size: var(--fs-body);
+    font-family: var(--ff-title);
     text-decoration: none;
-    color: rgb(168, 255, 214);
-    border: 1px solid rgb(168, 255, 214);
-    padding: .4em .5rem;
+    color: var(--clr-light-accent);
+    border: 1px solid var(--clr-light-accent);
+    padding: .5em 1rem;
     transition: 
         transform 250ms cubic-bezier(.5, 0, .5, 1), 
         opacity 250ms linear;
@@ -381,7 +387,7 @@ header {
 }
 
 .social-list__link {
-    color: rgb(168, 255, 214);
+    color: var(--clr-light-accent);
     transition: 
         transform 250ms cubic-bezier(.5, 0, .5, 1), 
         opacity 250ms linear;
@@ -413,15 +419,28 @@ header {
 /* My services section */
 
 .my-services {
-    background-color: var(--clr-light);
+    background-color: var(--clr-white);
     text-align: center;
 
 }
 
 .section__title--services {
-    color: var(--clr-dark);
+    color: var(--clr-dark-accent);
     position: relative;
-    margin: 1em 0 2em 0;
+    margin: 1em 0 1em 0;
+    font-size: var(--fs-h2);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
+}
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.25em auto 1em;
+    background: currentColor;
+    opacity: 0.5;
 }
 
 .service {
@@ -446,17 +465,20 @@ header {
 /* My projects section */
 
 .my-projects {
-    background-color: #2e4d41;
-    background-image: url(2.jpg);
+    background-color: var(--clr-dark);
+    background-image: url(3.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    color: var(--clr-light);
+    color: var(--clr-white);
     text-align: center;
 }
 
 .section__title--projects {
-    color: var(--clr-accent);
+    color: var(--clr-light-accent);
     position: relative;
+    font-size: var(--fs-h2);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
 }
 
 .section__title--projects::after {
@@ -513,8 +535,25 @@ header {
     padding: 7em 1em;
 }
 
+.section__title--about {
+    color: var(--clr-dark-accent);
+    font-family: var(--ff-title);
+    font-size: var(--fs-h2);
+    text-align: center;
+}
+
+.section__title--about::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.25;
+}
+
 .section__subtitle--about {
-    background: var(--clr-accent);
+    background: var(--clr-light-accent);
     font-family: var(--ff-primary);
     margin-top: 1em;
 }
@@ -550,9 +589,9 @@ header {
 
     .about-me__img {
         grid-area: img;
-        margin-top: 2.6em;
-        height: 80%;
+        margin-top: 5.5em;
         position: relative;
+        min-height: 70%;
         z-index: 2;
     }
 }
@@ -561,13 +600,24 @@ header {
 
 .achievements {
     background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-image: url(3.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-white);
     text-align: center;
 }
 
-.section__subtitle--achievements {
-    color: var(--clr-light);
+.section__title--achievements {
+    font-size: var(--fs-h2);
+    font-family: var(--ff-title);
     font-weight: var(--fw-bold);
+    color: var(--clr-light-accent);
+}
+
+.section__subtitle--achievements {
+    color: var(--clr-white);
+    font-weight: var(--fw-light);
+    font-size: var(--fs-body);
     margin-top: 2em;
     margin-bottom: 1em;
     text-align: center;
@@ -581,7 +631,7 @@ header {
 }
 
 .certificate__items {
-    background: var(--clr-nav);
+    background: var(--clr-accent);
     overflow: hidden;
     font-size: 0px;
 }
@@ -606,7 +656,7 @@ header {
 /* footer */
 
 .footer {
-    background: var(--clr-light);
+    background: var(--clr-white);
     padding: 2.5em 0;
     font-size: var(--fs-h3);
 }
@@ -619,7 +669,7 @@ header {
 }
 
 .footer a:hover {
-    opacity: .75;
+    opacity: .85;
 }
 
 .footer__contact-info {
@@ -638,8 +688,9 @@ header {
 .contact-info__email {
     margin: 2em;
     line-height: 1.5;
-    font-weight: var(--fw-reg);
     margin-right: 0;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-light);
 }
 
 .contact-info__name {
@@ -665,12 +716,11 @@ header {
 }
 
 .footer__social-list__link {
-    color: rgb(0, 90, 48);
+    color: var(--clr-accent);
 }
 
 .footer__contact-form {
     max-width: 550px;
-    min-width: 400px;
 }
   
 form {
@@ -680,7 +730,10 @@ form {
 .section__title--form {
     text-align: start;
     margin-bottom: 1.5em;
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-title);
+    font-size: var(--fs-h2);
+    color: var(--clr-dark-accent);
 }
   
 .input-container {
@@ -692,7 +745,7 @@ form {
     width: 100%;
     outline: none;
     border: none;
-    border-bottom: 1px solid #888;
+    border-bottom: 1px solid #999;
     background: none;
     padding: 0.6rem 1.2rem;
     font-size: var(--fs-body);
@@ -724,12 +777,12 @@ textarea.input {
 }
   
 .contact-btn {
-    padding: 1em 1.5em;
-    background-color: rgb(7, 77, 38);
+    padding: .9em 1em;
+    background-color: var(--clr-dark-accent);
     border: 1px solid;
     border-radius: .5em;
     font-size: var(--fs-body);
-    color: var(--clr-light);
+    color: var(--clr-white);
     cursor: pointer;
     transition:
         250ms cubic-bezier(.5, 0, .5, 1), 
@@ -738,7 +791,7 @@ textarea.input {
 }
   
 .contact-btn:hover {
-    background-color: rgb(39, 114, 83);
+    background-color: var(--clr-accent);
 }
  
 .input-container.focus label {
