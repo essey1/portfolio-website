@@ -327,13 +327,14 @@ header {
 }
 
 .section__subtitle--intro {
-    font-size: var(--fs-h2);
+    font-size: 1.5rem;
     line-height: 1.2; 
     font-family: var(--ff-secondary);
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 2em;
+    color: #cffde6;
 }
 
 .intro__cv {
