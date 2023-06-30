@@ -309,7 +309,7 @@ header {
 
 .intro {
     position: relative;
-    background-color: rgb(34, 37, 35);
+    background-color: rgb(83, 88, 85);
     background-image: url(3.jpg);
     background-size: cover;
     background-blend-mode: multiply;
