@@ -14,14 +14,14 @@
     --ff-text: 'Poppins', sans-serif;
     --ff-title: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-    --fw-light: 300;
-    --fw-medium: 400;
+    --fw-light: 350;
+    --fw-medium: 550;
     --fw-bold: 800;
 
     --clr-dark: rgb(14, 24, 26);
     --clr-white: rgb(255, 255, 255);
     --clr-dark-accent: rgb(4, 50, 35);
-    --clr-accent: rgb(42, 124, 83);
+    --clr-accent: rgb(27, 141, 84);
     --clr-light-accent: rgb(103, 172, 151);
 
     --fs-h1: 2rem;
@@ -118,9 +118,12 @@ h1 {
     color: #f5f5f5;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-body) }
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-medium);
+}
 
 .section__title {
     margin-bottom: .25em;
@@ -156,14 +159,13 @@ header {
     max-width: 7.5em;
     display: inline;
     margin-left: 0;
-    margin-top: .25em;
+    margin-top: .2em;
 }
 
 .nav__list {
     list-style: none;
     display: flex;
-    margin: 0;
-    margin-top: .25em;
+    margin: .25em 1em 0 0;
     padding: 0;
     padding-bottom: .65em;
     color: var(--clr-white);
@@ -171,11 +173,10 @@ header {
 
 .nav__item {
     display: inline;
-    margin-right: 1em;
 }
 
 .nav__item + .nav__item {
-    margin-left: 1.5em;
+    margin-left: 1.75em;
 }
 
 .nav__link {
@@ -190,11 +191,11 @@ header {
 }
 
 .nav__link:hover {
-    opacity: .25;
+    opacity: .5;
 }
 
 .nav__link:active {
-    opacity: 5;
+    opacity: 75;
 }
 
 .nav-toggle {
@@ -218,7 +219,7 @@ header {
     
     .logo {
         display: block;
-        margin-top: .5em;
+        margin-top: .45em;
     }
     
     .nav {
@@ -325,8 +326,7 @@ header {
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-white);
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .section__title--intro {
@@ -370,33 +370,40 @@ header {
 }
 
 .intro__cv:hover {
-    opacity: .6;
+    opacity: .5;
 }
 
-.social-list {
+.intro__cv:active {
+    opacity: .75;
+}
+
+.intro__social-list {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 0;
 }
 
-.social-list__item {
+.intro__social-list__item {
     margin: 0 .5em;
     font-size: var(--fs-h2);
     margin-bottom: 8vh;
 }
 
-.social-list__link {
+.intro__social-list__link {
     color: var(--clr-light-accent);
     transition: 
         transform 250ms cubic-bezier(.5, 0, .5, 1), 
         opacity 250ms linear;
 }
 
-.social-list__link:hover {
-    opacity: .6;
+.intro__social-list__link:hover {
+    opacity: .5;
 }
 
+.intro__social-list__link:active {
+    opacity: .75;
+}
 
 @media (min-width: 450px) {
     .section__title {
@@ -498,17 +505,60 @@ header {
 }
 
 .project__img{
+    margin-top: 2em;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
     box-shadow: var(--bs);
-    margin-bottom: 1em;
 }
 
 .project__img:hover,
 .project__items:focus .project__img {
     transform: scale(1.05, 1.05);
     opacity: .75;
+}
+
+.project__tools {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    text-align: start;
+    border-bottom: 1px solid var(--clr-accent);
+}
+
+.project__title {
+    text-align: start;
+}
+
+.project__description {
+    text-align: justify;
+    margin: .75em 0 1.125em 0;
+}
+
+.project__links{
+    text-align: start;
+}
+
+.project__links a {
+    text-decoration: none;
+    color: var(--clr-dark-accent);
+    font-weight: var(--fw-medium);
+    background-color: var(--clr-light-accent);
+    border: 1px solid var(--clr-light-accent);
+    border-radius: .25em;
+    padding: .4em .75em;
+    margin: 0 .5em 0 0;
+
+    transition:
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.project__links a:hover {
+    opacity: .6;
+}
+
+.project__links a:active {
+    opacity: .8;
 }
 
 @media (min-width: 992px) {
@@ -680,10 +730,6 @@ header {
     display: flex;
 }
 
-.footer__link:hover {
-    text-decoration: underline;
-}
-
 .contact-info__name,
 .contact-info__email {
     margin: 2em;
@@ -717,6 +763,14 @@ header {
 
 .footer__social-list__link {
     color: var(--clr-accent);
+}
+
+.footer__social-list__link:hover {
+    opacity: .5;
+}
+
+.footer__social-list__link:active {
+    opacity: .75;
 }
 
 .footer__contact-form {
@@ -778,7 +832,7 @@ textarea.input {
   
 .contact-btn {
     padding: .9em 1em;
-    background-color: var(--clr-dark-accent);
+    background-color: var(--clr-accent);
     border: 1px solid;
     border-radius: .5em;
     font-size: var(--fs-body);
@@ -791,7 +845,11 @@ textarea.input {
 }
   
 .contact-btn:hover {
-    background-color: var(--clr-accent);
+    opacity: .5;
+}
+
+.contact-btn:hover {
+    opacity: .75;
 }
  
 .input-container.focus label {
