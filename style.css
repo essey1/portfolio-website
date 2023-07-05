@@ -57,37 +57,6 @@
     }
 }
 
-/* Scroll styles and animations */
-::-webkit-scrollbar {
-    width: .35em;
-    height: .35em;
-}
-  
-::-webkit-scrollbar-track {
-    background: #6e877d;
-}
-  
-::-webkit-scrollbar-thumb {
-    background: #00492b;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #00492b90;
-}
-
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 750ms cubic-bezier(.5, 0, .5, 1);
-}
-    
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
 /* General styles */
 
 html {
@@ -453,7 +422,6 @@ header {
 .my-services {
     background-color: var(--clr-white);
     text-align: center;
-
 }
 
 .section__title--services {
@@ -572,7 +540,6 @@ header {
     border-radius: .25em;
     padding: .4em .75em;
     margin: 0 .5em 0 0;
-
     transition:
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -635,6 +602,7 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    transition-delay: 250ms;
 }
 
 @media (min-width: 700px) {
@@ -898,5 +866,84 @@ textarea.input {
     }
 }
 
+/* Scroll styles and animations */
+
+::-webkit-scrollbar {
+    width: .35em;
+    height: .35em;
+}
+  
+::-webkit-scrollbar-track {
+    background: #6e877d;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #00492b;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #00492b90;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 750ms cubic-bezier(.5, 0, .5, 1);
+}
+    
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.section__subtitle--intro {
+    transition-delay: 750ms;
+}
+
+.section__socials {
+    transition-delay: 1250ms;
+}
+
+@media (min-width: 700px) {
+    .service:nth-child(2) {
+        transition-delay: 250ms;
+    }
+}
+
+@media (min-width: 992px) {
+    .project:nth-child(even) {
+        transition-delay: 250ms;
+    }
+}
+
+.about-me__img {
+    transition-delay: 250ms;
+}
+
+.certificate__items:nth-child(2) {
+    transition-delay: 150ms;
+}
+
+.certificate__items:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.certificate__items:nth-child(4) {
+    transition-delay: 450ms;
+}
+
+.certificate__items:nth-child(5) {
+    transition-delay: 600ms;
+}
+
+.certificate__items:nth-child(6) {
+    transition-delay: 750ms;
+}
+
+.footer__contact-form {
+    transition-delay: 250ms;
+}
 
 
