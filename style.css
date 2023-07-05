@@ -388,7 +388,7 @@ header {
 .intro__social-list__item {
     margin: 0 .5em;
     font-size: var(--fs-h2);
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
 }
 
 .intro__social-list__link {
