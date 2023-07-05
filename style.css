@@ -325,7 +325,7 @@ header {
 .section__title--intro {
     font-size: var(--fs-h1);
     font-weight: var(--fw-medium);
-    margin-top: 15vh;
+    margin-top: 17.5vh;
 }
 
 .section__title--intro strong {
@@ -381,7 +381,7 @@ header {
 .intro__social-list__item {
     margin: 0 .5em;
     font-size: var(--fs-h2);
-    margin-bottom: 15vh;
+    margin-bottom: 17.5vh;
 }
 
 .intro__social-list__link {
