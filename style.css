@@ -364,11 +364,11 @@ header {
 }
 
 .intro__cv:hover {
-    opacity: .5;
+    opacity: .6;
 }
 
 .intro__cv:active {
-    opacity: .75;
+    opacity: .8;
 }
 
 .intro__social-list {
