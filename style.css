@@ -326,13 +326,14 @@ header {
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-white);
-    text-align: center; 
+    text-align: center;
+    max-height: 100vh;
 }
 
 .section__title--intro {
     font-size: var(--fs-h1);
     font-weight: var(--fw-light);
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 
 .section__title--intro strong {
@@ -387,7 +388,7 @@ header {
 .intro__social-list__item {
     margin: 0 .5em;
     font-size: var(--fs-h2);
-    margin-bottom: 8vh;
+    margin-bottom: 20vh;
 }
 
 .intro__social-list__link {
@@ -872,4 +873,19 @@ textarea.input {
         padding: 2em 2em 2em 0;
     }
 }
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s cubic-bezier(.5, 0, .5, 1);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
   
