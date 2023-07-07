@@ -324,21 +324,15 @@ header {
 .intro {
     position: relative;
     background-color: var(--clr-dark);
-    background-image: url(3.pg);
-    background-size: cover;
-    background-blend-mode: multiply;
     color: var(--clr-white);
     text-align: center;
     max-height: 100vh;
-    max-width: 1400px;
-    margin: 0 auto;
 }
 
 .section__title--intro {
     font-size: var(--fs-h1);
     font-weight: var(--fw-medium);
-    margin-top: 17.5vh;
-    transition-delay: 250ms;
+    margin-top: 15vh;
 }
 
 .section__title--intro strong {
@@ -394,7 +388,6 @@ header {
 .intro__social-list__item {
     margin: 0 .5em;
     font-size: var(--fs-h2);
-    margin-bottom: 17.5vh;
 }
 
 .intro__social-list__link {
@@ -437,13 +430,13 @@ header {
     text-align: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 7em 1em;
+    padding: 0 1em;
 }
 
 .section__title--services {
     color: var(--clr-dark-accent);
     position: relative;
-    padding: 1em 0 1em 0;
+    padding: 0;
     font-size: var(--fs-h2);
     font-family: var(--ff-title);
     font-weight: var(--fw-bold);
@@ -462,8 +455,8 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
-    padding: .5em;
-    margin-bottom: 1.25em;
+    padding: .5em .5em 0 .5em;
+    margin-bottom: 0;
 }
 
 @media (min-width: 700px) {
@@ -482,16 +475,10 @@ header {
 
 .my-projects {
     background-color: var(--clr-dark);
-    background-image: url(3jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
     color: var(--clr-white);
     text-align: center;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding-top: .5em;
 }
-
-
 
 .section__title--projects {
     color: var(--clr-light-accent);
@@ -595,7 +582,7 @@ header {
     background-color: var(--clr-white);
     max-width: 1000px;
     margin: 0 auto;
-    padding: 7em 1em;
+    padding: 0 1em;
 }
 
 .section__title--about {
@@ -666,8 +653,7 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-white);
     text-align: center;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding-top: .25em;
 }
 
 .section__title--achievements {
@@ -681,7 +667,6 @@ header {
     color: var(--clr-white);
     font-weight: var(--fw-light);
     font-size: var(--fs-body);
-    margin-top: 2em;
     margin-bottom: 1em;
     text-align: center;
 }
@@ -720,7 +705,7 @@ header {
 
 .footer {
     background: var(--clr-white);
-    padding: 5em 0;
+    padding: 0;
     font-size: var(--fs-h3);
     max-width: 1000px;
     margin: 0 auto;
@@ -918,12 +903,16 @@ textarea.input {
     transform: translateX(0);
 }
 
-.section__subtitle--intro {
+.section__title--intro {
     transition-delay: 750ms;
 }
 
+.section__subtitle--intro {
+    transition-delay: 1350ms;
+}
+
 .section__socials {
-    transition-delay: 1250ms;
+    transition-delay: 1850ms;
 }
 
 @media (min-width: 700px) {
@@ -966,92 +955,52 @@ textarea.input {
     transition-delay: 250ms;
 }
 
-
-.bottom-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-  
-  .bottom-wave svg {
-    position: relative;
-    display: block;
-    width: calc(143% + 1.3px);
-    height: 3em;
-  }
-  
-  .bottom-wave .shape-fill {
-    fill: var(--clr-white);
-    border: none;
-  }
-
-  .top-wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-  }
-  
-  .top-wave svg {
-    position: relative;
-    display: block;
-    width: calc(143% + 1.3px);
-    height: 3em;
-  }
-  
-  .top-wave .shape-fill {
-    fill: var(--clr-white);
-    border: none;
-  }
-  
-  @media (min-width: 850px) {
-    .top-wave svg {
-      height: 6em;
+@media (prefers-reduced-motion) {
+    .hidden {
+        transform: translateX(0%);
+        transition: all 100ms cubic-bezier(.5, 0, .5, 1);
     }
-  
-    .bottom-wave svg {
-      height: 6em;
-    }
-  }
+}
 
-  .spacer {
-    aspect-ratio: 960/540;
-    max-width: 1400px;
-    margin: 0 auto;
+.spacer {
+    aspect-ratio: 800/300;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+}
 
-  .layer {
+@media (min-width: 700px) {
+    .spacer {
+        aspect-ratio: 800/200;
+    }
+}
+
+@media (min-width: 1800px) {
+    .spacer {
+        aspect-ratio: 800/100;
+    }
+}
+
+@media (min-width: 3000px) {
+    .spacer {
+        aspect-ratio: 800/50;
+    }
+}
+
+.layer {
     background-image: url('layered-steps.svg');
-  }
+}
 
-  .layer1 {
+.layer1 {
     background-image: url('layered-steps1.svg');
-  }
+}
 
-  .layer2 {
+.layer2 {
     background-image: url('layered-steps2.svg');
-  }
+}
 
-  .layer3 {
+.layer3 {
     background-image: url('layered-steps3.svg');
     display: flex;
-  }
-
-  
-  
-  
-
-
-
-
-
+}
