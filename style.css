@@ -327,6 +327,7 @@ header {
     color: var(--clr-white);
     text-align: center;
     max-height: 100vh;
+    padding-bottom: 10vh;
 }
 
 .section__title--intro {
@@ -430,7 +431,7 @@ header {
     text-align: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 2em 1em 7em 1em;
 }
 
 .section__title--services {
@@ -477,7 +478,7 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-white);
     text-align: center;
-    padding-top: .5em;
+    padding: 3em 1em 1em 1em;
 }
 
 .section__title--projects {
@@ -582,7 +583,7 @@ header {
     background-color: var(--clr-white);
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 2em 1em 7em 1em;
 }
 
 .section__title--about {
@@ -653,7 +654,7 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-white);
     text-align: center;
-    padding-top: .25em;
+    padding: 3em 1em 2em 1em;
 }
 
 .section__title--achievements {
@@ -705,7 +706,7 @@ header {
 
 .footer {
     background: var(--clr-white);
-    padding: 0;
+    padding: 2em 0 0 0;
     font-size: var(--fs-h3);
     max-width: 1000px;
     margin: 0 auto;
@@ -740,7 +741,7 @@ header {
 }
 
 .contact-info__name {
-    margin-top: 6em;
+    margin-top: 4.5em;
 }
 
 .footer__email {
@@ -963,44 +964,45 @@ textarea.input {
 }
 
 .spacer {
-    aspect-ratio: 800/300;
+    aspect-ratio: 900/300;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .spacer {
-        aspect-ratio: 800/200;
+        aspect-ratio: 900/200;
     }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 2000px) {
     .spacer {
-        aspect-ratio: 800/100;
+        aspect-ratio: 900/0;
     }
-}
-
-@media (min-width: 3000px) {
-    .spacer {
-        aspect-ratio: 800/50;
-    }
-}
-
-.layer {
-    background-image: url('layered-steps.svg');
 }
 
 .layer1 {
     background-image: url('layered-steps1.svg');
 }
 
-.layer2 {
-    background-image: url('layered-steps2.svg');
+.top-split {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
-.layer3 {
-    background-image: url('layered-steps3.svg');
-    display: flex;
+.top-split svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10em;
+}
+
+.top-split .shape-fill {
+    fill: var(--clr-white);
 }
