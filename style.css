@@ -343,6 +343,7 @@ header {
     color: var(--clr-white);
     text-align: center;
     height: 100vh;
+    height: 100svh;
     padding-block: 30vh;
 }
 
