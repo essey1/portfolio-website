@@ -955,15 +955,15 @@ textarea.input {
 }
 
 .section__title--intro {
-    transition-delay: 750ms;
+    transition-delay: 250ms;
 }
 
 .section__subtitle--intro {
-    transition-delay: 1350ms;
+    transition-delay: 850ms;
 }
 
 .section__socials {
-    transition-delay: 1850ms;
+    transition-delay: 1500ms;
 }
 
 @media (min-width: 700px) {
@@ -1011,49 +1011,4 @@ textarea.input {
         transform: translateX(0%);
         transition: all 100ms cubic-bezier(.5, 0, .5, 1);
     }
-}
-
-.spacer {
-    aspect-ratio: 900/300;
-    width: 100%;
-    height: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-@media (min-width: 800px) {
-    .spacer {
-        aspect-ratio: 900/200;
-    }
-}
-
-@media (min-width: 2000px) {
-    .spacer {
-        height: 0;
-    }
-}
-
-.layer1 {
-    background-image: url('layered-steps1.svg');
-}
-
-.top-split {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.top-split svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 0;
-}
-
-.top-split .shape-fill {
-    fill: var(--clr-white);
 }
