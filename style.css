@@ -52,7 +52,7 @@
 @media (min-width: 500px) {
     :root {
         --fs-h1: 2.5rem;
-        --fs-h2: 1.5rem;
+        --fs-h2: 1.75rem;
         --fs-h3: 1.3rem;
         --fs-body: 1.1rem;
     }
@@ -61,7 +61,7 @@
 @media (min-width: 850px) {
     :root {
         --fs-h1: 3.5rem;
-        --fs-h2: 2rem;
+        --fs-h2: 2.25rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.25rem;
     }
@@ -70,7 +70,7 @@
 @media (min-width: 1500px) {
     :root {
         --fs-h1: 4rem;
-        --fs-h2: 3rem;
+        --fs-h2: 2.75rem;
         --fs-h3: 2rem;
         --fs-body: 1.5rem;
     }
@@ -344,7 +344,7 @@ header {
     text-align: center;
     height: 100vh;
     height: 100svh;
-    padding-block: 30vh;
+    padding-block: 27.5vh;
 }
 
 .section__title--intro {
@@ -816,8 +816,11 @@ header {
 }
 
 .footer__social-list__item {
-    margin: 0 .5em;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
+}
+
+.footer__social-list__item + .footer__social-list__item {
+    margin-left: .75em;
 }
 
 .footer__social-list__link {
