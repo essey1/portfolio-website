@@ -388,11 +388,11 @@ header {
         opacity 250ms linear;
 }
 
-.intro__cv:hover {
+.intro__rectangles:hover {
     opacity: .6;
 }
 
-.intro__cv:active {
+.intro__rectangles:active {
     opacity: .8;
 }
 
