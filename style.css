@@ -18,11 +18,12 @@
     --fw-medium: 550;
     --fw-bold: 800;
 
-    --clr-dark: #0e181a;
+    --clr-dark: #030302;
     --clr-white: #ffffff;
+    --clr-light-grey: #c4cfcb;
     --clr-dark-accent: #043223;
-    --clr-accent: #1b8d54;
-    --clr-light-accent: #67ac97;
+    --clr-accent: #1b8250;
+    --clr-light-accent: #749f91;
     --gradient: linear-gradient(
         45deg,
         #dbccaa,
@@ -54,7 +55,7 @@
         --fs-h1: 2.5rem;
         --fs-h2: 1.75rem;
         --fs-h3: 1.3rem;
-        --fs-body: 1.1rem;
+        --fs-body: 1.05rem;
     }
 }
 
@@ -63,7 +64,7 @@
         --fs-h1: 3.5rem;
         --fs-h2: 2.25rem;
         --fs-h3: 1.5rem;
-        --fs-body: 1.25rem;
+        --fs-body: 1.125rem;
     }
 }
 
@@ -72,7 +73,7 @@
         --fs-h1: 4rem;
         --fs-h2: 2.75rem;
         --fs-h3: 2rem;
-        --fs-body: 1.5rem;
+        --fs-body: 1.4rem;
     }
 }
 
@@ -83,7 +84,7 @@ html {
 }
 
 body {
-    color: #000;
+    color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-text);
     font-size: var(--fs-body);
@@ -126,7 +127,7 @@ h1 {
     text-transform: uppercase;
     line-height: 1.2; 
     font-family: var(--ff-title);
-    color: var(--clr-white);
+    color: var(--clr-light-grey);
     letter-spacing: .1rem;
 }
 
@@ -186,7 +187,7 @@ header {
     margin: .25em 1em 0 0;
     padding: 0;
     padding-bottom: .65em;
-    color: var(--clr-white);
+    color: var(--clr-light-grey);
 }
 
 .nav__item {
@@ -243,7 +244,7 @@ header {
     .nav {
         position: fixed;
         background: var(--clr-accent);
-        color: var(--clr-white);
+        color: var(--clr-light-grey);
         top: 0;
         bottom: 0;
         left: 0;
@@ -316,7 +317,7 @@ header {
     .hamburger,
     .hamburger::before,
     .hamburger::after {
-        background: var(--clr-white);
+        background: var(--clr-light-grey);
         width: 1.65em;
         height: 3px;
         border-radius: 1em;
@@ -340,11 +341,16 @@ header {
 .intro {
     position: relative;
     background-color: var(--clr-dark);
-    color: var(--clr-white);
+    color: var(--clr-light-grey);
     text-align: center;
-    height: 100vh;
-    height: 100svh;
     padding-block: 27.5vh;
+}
+
+@media (min-height: 420px) {
+    .intro {
+        height: 100vh;
+        height: 100svh;
+    }
 }
 
 .section__title--intro {
@@ -358,11 +364,11 @@ header {
 
 .section__subtitle--intro {
     font-size: var(--fs-h3);
-    color: var(--clr-white);
+    color: var(--clr-light-grey);
     line-height: 1; 
     font-family: var(--ff-text);
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 0 1em 0;
     margin-bottom: 2.5em;
@@ -381,6 +387,7 @@ header {
     text-decoration: none;
     color: var(--clr-light-accent);
     border: 1px solid var(--clr-light-accent);
+    border-radius: .1em;
     padding: .5em .75rem;
     margin-right: .25em;
     transition: 
@@ -437,7 +444,6 @@ header {
 /* My services section */
 
 .my-services {
-    background-color: var(--clr-white);
     text-align: center;
     max-width: 1400px;
     margin: 0 auto;
@@ -486,7 +492,7 @@ header {
 
 .my-projects {
     background-color: var(--clr-dark);
-    color: var(--clr-white);
+    color: #b9bcbb;
     text-align: center;
     padding: 5em .5em;
 }
@@ -520,6 +526,7 @@ header {
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
     box-shadow: var(--bs);
+    border-radius: 1em;
 }
 
 .project__img:hover,
@@ -550,10 +557,9 @@ header {
 
 .project__links a {
     text-decoration: none;
-    color: var(--clr-dark-accent);
-    font-weight: var(--fw-medium);
-    background-color: var(--clr-light-accent);
-    border: 1px solid var(--clr-light-accent);
+    color: var(--clr-light-accent);
+    background-color: var(--clr-dark-accent);
+    border: 1px solid var(--clr-dark-accent);
     border-radius: .25em;
     padding: .4em .75em;
     margin: 0 .5em 0 0;
@@ -605,7 +611,6 @@ header {
 /* About me */
 
 .about-me {
-    background-color: var(--clr-white);
     max-width: 1000px;
     margin: 0 auto;
     padding: 5em 1em;
@@ -668,7 +673,6 @@ header {
         grid-area: img;
         margin-top: 5.5em;
         position: relative;
-        min-height: 70%;
         z-index: 2;
     }
 }
@@ -677,7 +681,7 @@ header {
 
 .achievements {
     background-color: var(--clr-dark);
-    color: var(--clr-white);
+    color: var(--clr-light-grey);
     text-align: center;
     padding: 5em 1em;
 }
@@ -700,7 +704,7 @@ header {
 }
 
 .section__subtitle--achievements {
-    color: var(--clr-white);
+    color: var(--clr-light-grey);
     font-weight: var(--fw-light);
     font-size: var(--fs-body);
     margin-bottom: 1em;
@@ -747,7 +751,6 @@ header {
 /* footer */
 
 .footer {
-    background: var(--clr-white);
     padding: 5em 1em;
     font-size: var(--fs-h3);
     max-width: 1200px;
