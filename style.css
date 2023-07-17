@@ -24,16 +24,6 @@
     --clr-dark-accent: #043223;
     --clr-accent: #1b8250;
     --clr-light-accent: #749f91;
-    --gradient: linear-gradient(
-        45deg,
-        #dbccaa,
-        #cbe1b0,
-        #acd8c2,
-        #a7dde7,
-        #b3c0eb,
-        #dfcae9
-    );
-    
 
     --fs-h1: 2rem;
     --fs-h2: 1.25rem;
