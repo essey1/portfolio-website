@@ -20,7 +20,7 @@
 
     --clr-dark: #030302;
     --clr-white: #ffffff;
-    --clr-light-grey: #c4cfcb;
+    --clr-light-grey: #dde4e2;
     --clr-dark-accent: #043223;
     --clr-accent: #1b8250;
     --clr-light-accent: #749f91;
@@ -103,7 +103,6 @@ section {
         padding: 5em 3em;
     }
 }
-
 
 img {
     max-width: 100%;
@@ -340,6 +339,7 @@ header {
 
 .intro {
     position: relative;
+    overflow: hidden;
     background-color: var(--clr-dark);
     color: var(--clr-light-grey);
     text-align: center;
@@ -441,6 +441,7 @@ header {
         display: inline-block;
     }
 }
+
 /* My services section */
 
 .my-services {
@@ -739,7 +740,6 @@ header {
 
 .certificate__item:focus {
     position: relative;
-    z-index: 2;
 }
 
 .certificate__img:hover,
