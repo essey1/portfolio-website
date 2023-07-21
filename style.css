@@ -166,7 +166,7 @@ header {
 .logo {
     max-width: 7.5em;
     display: inline;
-    margin-left: 0;
+    margin-left: 1em;
     margin-top: .2em;
 }
 
@@ -273,7 +273,7 @@ header {
         border: 0;
         cursor: pointer;
         position: absolute;
-        right: .5em;
+        right: 1em;
         top: .9em;
         z-index: 1000;
     }
@@ -347,6 +347,18 @@ header {
     }
 }
 
+@media (min-height: 800px) and (max-width: 800px) {
+    .intro {
+        height: auto;
+    }
+}
+
+@media (min-height: 1000px) {
+    .intro {
+        height: auto;
+    }
+}
+
 .section__title--intro {
     font-size: var(--fs-h1);
     font-weight: var(--fw-medium);
@@ -362,10 +374,10 @@ header {
     line-height: 1; 
     font-family: var(--ff-text);
     text-align: center;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 0 1em 0;
-    margin-bottom: 2.5em;
+    padding: 0 0 .75em 0;
+    margin-bottom: 2em;
     border-bottom: 1px solid var(--clr-light-accent);
 }
 
