@@ -21,7 +21,7 @@
     --clr-dark: #030302;
     --clr-white: #ffffff;
     --clr-light-grey: #eeeeee;
-    --clr-dark-accent: #043223;
+    --clr-dark-accent: #17382d;
     --clr-accent: #1b8250;
     --clr-light-accent: #749f91;
 
@@ -63,7 +63,7 @@
         --fs-h1: 4rem;
         --fs-h2: 2.75rem;
         --fs-h3: 2rem;
-        --fs-body: 1.4rem;
+        --fs-body: 1.3rem;
     }
 }
 
@@ -159,7 +159,7 @@ header {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -232,7 +232,7 @@ header {
     
     .nav {
         position: fixed;
-        background: var(--clr-accent);
+        background: var(--clr-dark-accent);
         color: var(--clr-light-grey);
         top: 0;
         bottom: 0;
@@ -636,7 +636,6 @@ header {
 .section__subtitle--about {
     background: var(--clr-light-accent);
     font-family: var(--ff-primary);
-    margin-top: 1em;
 }
 
 .about-me__img {
