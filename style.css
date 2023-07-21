@@ -20,7 +20,7 @@
 
     --clr-dark: #030302;
     --clr-white: #ffffff;
-    --clr-light-grey: #dde4e2;
+    --clr-light-grey: #eeeeee;
     --clr-dark-accent: #043223;
     --clr-accent: #1b8250;
     --clr-light-accent: #749f91;
@@ -331,6 +331,10 @@ header {
     position: relative;
     overflow: hidden;
     background-color: var(--clr-dark);
+    background-image: url("sun-tornado.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--clr-light-grey);
     text-align: center;
     padding-block: 27.5vh;
@@ -372,6 +376,7 @@ header {
 }
 
 .intro__rectangles {
+    display: inline-flex;
     font-size: var(--fs-body);
     font-family: var(--ff-text);
     text-decoration: none;
@@ -379,7 +384,7 @@ header {
     border: 1px solid var(--clr-light-accent);
     border-radius: .1em;
     padding: .5em .75rem;
-    margin-right: .25em;
+    margin: .25em;
     transition: 
         transform 250ms cubic-bezier(.5, 0, .5, 1), 
         opacity 250ms linear;
@@ -483,6 +488,10 @@ header {
 
 .my-projects {
     background-color: var(--clr-dark);
+    background-image: url("sun-tornado.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #b9bcbb;
     text-align: center;
     padding: 5em .5em;
@@ -672,6 +681,10 @@ header {
 
 .achievements {
     background-color: var(--clr-dark);
+    background-image: url("sun-tornado.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--clr-light-grey);
     text-align: center;
     padding: 5em 1em;
