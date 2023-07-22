@@ -233,6 +233,11 @@ header {
     .nav {
         position: fixed;
         background: var(--clr-dark-accent);
+        background-image: url("sun-tornado.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: var(--bs);
         color: var(--clr-light-grey);
         top: 0;
         bottom: 0;
@@ -288,10 +293,12 @@ header {
     
     .nav-open .hamburger {
         transform: rotate(.625turn);
+        margin-top: 1em;
     }
     
     .nav-open .hamburger::before {
         transform: rotate(90deg) translateX(-6px);
+        margin-right: 1em;
     }
     
     .nav-open .hamburger::after {
@@ -979,7 +986,7 @@ textarea.input {
 }
 
 .section__subtitle--intro {
-    transition-delay: 850ms;
+    transition-delay: 900ms;
 }
 
 .section__socials {
