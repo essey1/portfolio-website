@@ -354,7 +354,7 @@ header {
     }
 }
 
-@media (min-height: 800px) and (max-width: 800px) {
+@media (min-height: 850px) and (max-width: 800px) {
     .intro {
         height: auto;
     }
