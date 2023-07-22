@@ -293,12 +293,12 @@ header {
     
     .nav-open .hamburger {
         transform: rotate(.625turn);
-        margin-top: 1em;
+        margin-top: .5em;
     }
     
     .nav-open .hamburger::before {
         transform: rotate(90deg) translateX(-6px);
-        margin-right: 1em;
+        margin-right: .5em;
     }
     
     .nav-open .hamburger::after {
@@ -336,6 +336,9 @@ header {
 
 .intro {
     position: relative;
+    display: grid;
+    align-content: center;
+    min-height: 600px;
     overflow: hidden;
     background-color: var(--clr-dark);
     background-image: url("sun-tornado.svg");
@@ -344,7 +347,6 @@ header {
     background-size: cover;
     color: var(--clr-light-grey);
     text-align: center;
-    padding-block: 27.5vh;
 }
 
 @media (min-height: 420px) {
@@ -354,11 +356,6 @@ header {
     }
 }
 
-@media (min-height: 850px) and (max-width: 800px) {
-    .intro {
-        height: auto;
-    }
-}
 
 @media (min-height: 1000px) {
     .intro {
@@ -369,6 +366,7 @@ header {
 .section__title--intro {
     font-size: var(--fs-h1);
     font-weight: var(--fw-medium);
+    margin-top: 2em;
 }
 
 .section__title--intro strong {
@@ -422,6 +420,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin-bottom: 6em;
 }
 
 .intro__social-list__item {
