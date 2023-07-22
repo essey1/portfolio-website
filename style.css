@@ -20,7 +20,7 @@
 
     --clr-dark: #030302;
     --clr-white: #ffffff;
-    --clr-light-grey: #eeeeee;
+    --clr-light-grey: #f6f6f6;
     --clr-dark-accent: #17382d;
     --clr-accent: #1b8250;
     --clr-light-accent: #749f91;
@@ -233,7 +233,7 @@ header {
     .nav {
         position: fixed;
         background: var(--clr-dark-accent);
-        background-image: url("sun-tornado.svg");
+        background-image: url("sun-tornado1.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -257,8 +257,8 @@ header {
         flex-direction: column;
         line-height: 3;
         align-items: start;
-        margin: 0 0 0 2em;
-        margin-top: 3em;
+        margin: 0 0 0 10%;
+        margin-top: 4em;
         padding: 0;
     }
 
