@@ -383,7 +383,7 @@ header {
     margin: 0 auto;
     padding: 0 0 .75em 0;
     margin-bottom: 2em;
-    border-bottom: 2px solid var(--clr-light-accent);
+    border-bottom: 1px solid var(--clr-light-accent);
 }
 
 @media (max-width: 900px) {
@@ -404,8 +404,9 @@ header {
     color: var(--clr-light-accent);
     border: 1px solid var(--clr-light-accent);
     outline: 1px solid var(--clr-light-accent);
-    border-radius: .05em;
-    padding: .5rem .75rem;
+    outline-offset: -1px;
+    border-radius: .1rem;
+    padding: .65rem 1rem;
     margin: .35em;
     transition: outline-offset 200ms ease;
 }
@@ -986,12 +987,12 @@ textarea.input {
 }
 
 .section__title--intro {
-    transition: all 600ms cubic-bezier(.5, 0, .5, 1);
+    transition: all 750ms cubic-bezier(.5, 0, .5, 1);
     transition-delay: 150ms;
 }
 
 .section__subtitle--intro {
-    transition: all 500ms cubic-bezier(.5, 0, .5, 1);
+    transition: all 650ms cubic-bezier(.5, 0, .5, 1);
     transition-delay: 1250ms;
 }
 
