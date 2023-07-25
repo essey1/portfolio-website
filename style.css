@@ -356,6 +356,13 @@ header {
     }
 }
 
+@media (max-width: 500px) {
+    .intro {
+        height: 95vh;
+        height: 95svh;
+    }
+}
+
 
 @media (min-height: 1000px) {
     .intro {
@@ -366,6 +373,7 @@ header {
 .section__title--intro {
     font-size: var(--fs-h1);
     font-weight: var(--fw-medium);
+    margin-top: 1.5em;
 }
 
 .section__title--intro strong {
