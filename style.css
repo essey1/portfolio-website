@@ -406,9 +406,15 @@ header {
     outline: 1px solid var(--clr-light-accent);
     outline-offset: -1px;
     border-radius: .1rem;
-    padding: .5rem .75rem;
+    padding: .5rem .5rem;
     margin: .35em;
     transition: outline-offset 200ms ease;
+}
+
+@media (min-width: 800px) {
+    .intro__buttons--link {
+        padding: .6rem .8rem;
+    }
 }
 
 .intro__buttons--link:hover,
@@ -977,7 +983,7 @@ textarea.input {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1250ms cubic-bezier(.5, 0, .5, 1);
+    transition: all 1000ms cubic-bezier(.5, 0, .5, 1);
 }
     
 .show {
