@@ -406,7 +406,7 @@ header {
     outline: 1px solid var(--clr-light-accent);
     outline-offset: -1px;
     border-radius: .1rem;
-    padding: .5rem .5rem;
+    padding: .5rem .7rem;
     margin: .35em;
     transition: outline-offset 200ms ease;
 }
