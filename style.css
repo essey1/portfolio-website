@@ -338,7 +338,6 @@ header {
     position: relative;
     display: grid;
     align-content: center;
-    min-height: 600px;
     overflow: hidden;
     background-color: var(--clr-dark);
     background-image: url("sun-tornado.svg");
@@ -353,13 +352,6 @@ header {
     .intro {
         height: 100vh;
         height: 100svh;
-    }
-}
-
-@media (max-width: 500px) {
-    .intro {
-        height: 95vh;
-        height: 95svh;
     }
 }
 
