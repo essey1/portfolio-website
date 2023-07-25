@@ -405,15 +405,15 @@ header {
     border: 1px solid var(--clr-light-accent);
     outline: 1px solid var(--clr-light-accent);
     outline-offset: -1px;
-    border-radius: .1rem;
-    padding: .5rem .7rem;
+    border-radius: .1em;
+    padding: .5em .8em;
     margin: .35em;
     transition: outline-offset 200ms ease;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 400px) {
     .intro__buttons--link {
-        padding: .6rem .8rem;
+        font-size: .8125rem;
     }
 }
 
