@@ -527,6 +527,7 @@ header {
     font-size: var(--fs-h2);
     font-family: var(--ff-title);
     font-weight: var(--fw-bold);
+    margin-bottom: 3em;
 }
 
 .section__title--projects::after {
@@ -541,7 +542,7 @@ header {
 
 .project {
     max-width: 550px;
-    margin: 0 auto;
+    margin: 0 auto 7em;
 }
 
 .project__img{
@@ -609,7 +610,6 @@ header {
     .project {
         display: flex;
         max-width: 1000px;
-        margin: 0 auto;
     }
 
     .project__img {
