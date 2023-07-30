@@ -40,7 +40,7 @@ formToReset.addEventListener('submit', (e) => {
    }, 1);
 });
 
-// On scroll animation
+// On scroll animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry)
