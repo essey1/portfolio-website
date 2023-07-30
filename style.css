@@ -71,10 +71,12 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: clip;
+
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: clip;
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-text);
