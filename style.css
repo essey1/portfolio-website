@@ -742,13 +742,9 @@ header {
     }
 }
 
-.certificate__items {
-    background: var(--clr-accent);
+.certificate__item {
     overflow: hidden;
     font-size: 0px;
-}
-
-.certificate__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -759,50 +755,56 @@ header {
 }
 
 .certificate__img:hover,
-.certificate__items:focus .certificate__img {
+.certificate__item:focus .certificate__img {
     transform: scale(1.125, 1.125);
     opacity: .75;
 }
 
 @media (min-width: 900px) {
-    .certificate__items,
+    .certificate__item,
     .certificate__img {
       overflow: visible;
     }
   
     .certificate__img:hover,
-    .certificate__items:focus .certificate__img {
+    .certificate__item:focus .certificate__img {
       transform: scale(1, 1);
       opacity: 1;
     }
   
-    .certificate__img--1:hover {
-      transform: translate(100%, 50%)
+    .certificate__item--1:hover {
+        z-index: 8;
+        transform: translate(100%, 50%)
                  scale(3, 2);
     }
-    
-    .certificate__img--2:hover {
-      transform: translate(0%, 50%)
+
+    .certificate__item--2:hover {
+        z-index: 8;
+        transform: translate(0%, 50%)
                  scale(3, 2);
     }
-    
-    .certificate__img--3:hover {
-      transform: translate(-100%, 50%)
+
+    .certificate__item--3:hover {
+        z-index: 8;
+        transform: translate(-100%, 50%)
                  scale(3, 2);
     }
-    
-    .certificate__img--4:hover {
-      transform: translate(100%, -50%)
+
+    .certificate__item--4:hover {
+        z-index: 8;
+        transform: translate(100%, -50%)
                  scale(3, 2);
     }
-    
-    .certificate__img--5:hover {
-      transform: translate(0%, -50%)
+
+    .certificate__item--5:hover {
+        z-index: 8;
+        transform: translate(0%, -50%)
                  scale(3, 2);
     }
-    
-    .certificate__img--6:hover {
-      transform: translate(-100%, -50%)
+
+    .certificate__item--6:hover {
+        z-index: 8;
+        transform: translate(-100%, -50%)
                  scale(3, 2);
     }
   }
@@ -897,7 +899,7 @@ header {
     opacity: .75;
 }
 
-.footer__contact-form {
+.footer__contact--form {
     max-width: 300px;
     margin: 0 auto;
 }
@@ -979,7 +981,7 @@ textarea.input {
         justify-content: center;
     }
 
-    .footer__contact-form {
+    .footer__contact--form {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
@@ -1006,6 +1008,7 @@ textarea.input {
     background: #00492b90;
 }
 
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -1013,11 +1016,17 @@ textarea.input {
     transition: all 1250ms cubic-bezier(.5, 0, .5, 1);
 }
 
-.project__details.hidden {
+.service:nth-child(2).hidden,
+.project__details.hidden,
+.about-me__img.hidden,
+.footer__contact--form.hidden {
     transform: translateX(100%);
 }
-    
+
+.service:nth-child(2).show,
 .project__details.show,
+.about-me__img.show,
+.footer__contact--form.show,
 .show {
     opacity: 1;
     filter: blur(0);
@@ -1048,38 +1057,26 @@ textarea.input {
     transition-delay: 1500ms;
 }
 
-@media (min-width: 700px) {
-    .service:nth-child(2) {
-        transition-delay: 250ms;
-    }
-}
-
 .about-me__img {
-    transition: all 2s cubic-bezier(.5, 0, .5, 1);
+    transition: all 1500ms cubic-bezier(.5, 0, .5, 1);
 }
 
-.certificate__items:nth-child(2) {
-    transition-delay: 150ms;
-}
-
-.certificate__items:nth-child(3) {
-    transition-delay: 300ms;
-}
-
-.certificate__items:nth-child(4) {
-    transition-delay: 450ms;
-}
-
-.certificate__items:nth-child(5) {
-    transition-delay: 600ms;
-}
-
-.certificate__items:nth-child(6) {
-    transition-delay: 750ms;
-}
-
-.footer__contact-form {
-    transition-delay: 250ms;
+@media (min-width: 900px) {
+    .certificate__img--2 {
+        transition-delay: 150ms;
+    }
+    
+    .certificate__img--3 {
+        transition-delay: 300ms;
+    }
+    
+    .certificate__img--5 {
+        transition-delay: 150ms;
+    }
+    
+    .certificate__img--6 {
+        transition-delay: 300ms;
+    }
 }
 
 @media (prefers-reduced-motion) {
