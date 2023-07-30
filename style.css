@@ -23,7 +23,7 @@
     --clr-light-grey: #eeeeee;
     --clr-dark-accent: #17382d;
     --clr-accent: #1b8250;
-    --clr-light-accent: #8bb8a9;
+    --clr-light-accent: #91b9ac;
 
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
@@ -467,7 +467,7 @@ header {
     text-align: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 5em 1em;
+    padding: 7em 1.5em 9em;
 }
 
 .section__title--services {
@@ -518,7 +518,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 5em 1.5em;
+    padding: 5em 1.5em 4em;
 }
 
 .section__title--projects {
@@ -527,7 +527,7 @@ header {
     font-size: var(--fs-h2);
     font-family: var(--ff-title);
     font-weight: var(--fw-bold);
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .section__title--projects::after {
@@ -542,7 +542,7 @@ header {
 
 .project {
     max-width: 550px;
-    margin: 0 auto 7em;
+    margin: 0 auto 5em;
 }
 
 .project__img{
@@ -556,7 +556,7 @@ header {
 
 .project__img:hover,
 .project__items:focus .project__img {
-    transform: scale(1.025, 1.025);
+    transform: scale(1.05, 1.05);
     opacity: .9;
 }
 
@@ -627,7 +627,7 @@ header {
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 5em 1em;
+    padding: 7em 1.5em 9em;
 }
 
 .section__title--about {
@@ -700,7 +700,7 @@ header {
     background-size: cover;
     color: var(--clr-light-grey);
     text-align: center;
-    padding: 5em 1em;
+    padding: 5em 1.5em 9em;
 }
 
 .section__title--achievements {
@@ -811,8 +811,8 @@ header {
 
 /* footer */
 
-.footer {
-    padding: 5em 1em;
+.footer__container {
+    padding: 5em 1.5em 7em;
     font-size: var(--fs-h3);
     max-width: 1200px;
     margin: 0 auto;
@@ -972,6 +972,14 @@ textarea.input {
     left: 0;
 }
 
+.footer__copyright {
+    margin: 0;
+    padding: 1.5em 0;
+    text-align: center;
+    background-color: var(--clr-light-grey);
+    font-size: var(--fs-body);
+}
+
 @media (min-width: 600px) {
     .contact-container {
         width: 100%;
@@ -1069,13 +1077,17 @@ textarea.input {
     .certificate__img--3 {
         transition-delay: 300ms;
     }
+
+    .certificate__img--4 {
+        transition-delay: 100ms;
+    }
     
     .certificate__img--5 {
-        transition-delay: 150ms;
+        transition-delay: 250ms;
     }
     
     .certificate__img--6 {
-        transition-delay: 300ms;
+        transition-delay: 400ms;
     }
 }
 
