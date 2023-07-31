@@ -1047,7 +1047,7 @@ textarea.input {
     transition: all 1250ms cubic-bezier(.5, 0, .5, 1);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
     .project__details--left.hidden {
         opacity: 0;
         filter: blur(5px);
