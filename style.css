@@ -594,18 +594,14 @@ header {
     opacity: .8;
 }
 
-.project__details {
-    margin-top: 1.5em;
-}
-
 .project__title {
     text-align: start;
     font-size: var(--fs-h3);
+    margin-top: 1.25em;
 }
 
 .project__description {
     text-align: justify;
-    margin: .75em 0 1.125em 0;
 }
 
 @media (min-width: 800px) {
@@ -615,12 +611,17 @@ header {
     }
 
     .project__img {
-        width: 600px;
+        min-width: 350px;
     }
 
-    .project__details {
-        width: 85%;
-        margin: 2em 0 0 2em;
+    .project__right {
+        margin-left: 2em;
+    }
+}
+
+@media (min-width: 950px) {
+    .project__img {
+        min-width: 450px;
     }
 }
 
@@ -1027,14 +1028,14 @@ textarea.input {
 }
 
 .service:nth-child(2).hidden,
-.project__details.hidden,
+.project__right.hidden,
 .about-me__img.hidden,
 .footer__contact--form.hidden {
     transform: translateX(100%);
 }
 
 .service:nth-child(2).show,
-.project__details.show,
+.project__right.show,
 .about-me__img.show,
 .footer__contact--form.show,
 .show {
