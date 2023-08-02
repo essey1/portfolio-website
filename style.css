@@ -362,7 +362,7 @@ header {
 .section__title--intro {
     font-size: var(--fs-h1);
     font-weight: var(--fw-medium);
-    margin-top: 2em;
+    margin-top: 1.75em;
 }
 
 @media (max-width: 849px) {
@@ -384,7 +384,7 @@ header {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 0 .75em 0;
-    margin-bottom: 2em;
+    margin-bottom: 1.75em;
     border-bottom: 1px solid var(--clr-light-accent);
 }
 
