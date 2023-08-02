@@ -27,7 +27,7 @@
 
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
-    --fs-h3: 1rem;
+    --fs-h3: 1.125rem;
     --fs-body: 1rem;
 
     --bs: .25em .25em .75em rgba(0,0,0,.25),
@@ -37,7 +37,7 @@
 @media (max-width: 400px) {
     :root {
         --fs-h1: 1.62rem;
-    }
+}
 }
 
 @media (min-width: 500px) {
@@ -53,7 +53,7 @@
     :root {
         --fs-h1: 3.5rem;
         --fs-h2: 2.25rem;
-        --fs-h3: 1.5rem;
+        --fs-h3: 1.6rem;
         --fs-body: 1.125rem;
     }
 }
@@ -345,7 +345,7 @@ header {
     text-align: center;
 }
 
-@media (min-height: 420px) {
+@media (min-height: 500px) {
     .intro {
         height: 100vh;
         height: 100svh;
@@ -362,7 +362,13 @@ header {
 .section__title--intro {
     font-size: var(--fs-h1);
     font-weight: var(--fw-medium);
-    margin-top: 1.5em;
+    margin-top: 2em;
+}
+
+@media (max-width: 849px) {
+    .section__title--intro {
+        margin: 2em 0 .25em;
+    }
 }
 
 .section__title--intro strong {
@@ -389,7 +395,24 @@ header {
 }
 
 .intro__buttons {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+@media (min-width: 401px) {
+    .intro__buttons {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 500px) {
+    .intro__buttons {
+        max-width: 500px;
+    }
 }
 
 .intro__buttons--link {
@@ -1072,15 +1095,15 @@ textarea.input {
     transform: translateX(0);
 }
 
-.intro__buttons {
+.intro__buttons--item {
     transition-delay: 1000ms;
 }
 
-.intro__buttons:nth-child(2) {
+.intro__buttons--item:nth-child(2) {
     transition-delay: 1250ms;
 }
 
-.intro__buttons:nth-child(3) {
+.intro__buttons--item:nth-child(3) {
     transition-delay: 1500ms;
 }
 

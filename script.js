@@ -41,14 +41,16 @@ formToReset.addEventListener('submit', (e) => {
 });
 
 // On scroll animations
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
   });
-});
-
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
+  
+  const hiddenElements = document.querySelectorAll(".hidden");
+  hiddenElements.forEach((el) => observer.observe(el));
+})
