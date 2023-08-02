@@ -1062,11 +1062,13 @@ textarea.input {
 
 .service:nth-child(2).hidden,
 .project__details.hidden,
-.about-me__img.hidden,
 .footer__contact--form.hidden {
     transform: translateX(100%);
 }
 
+.about-me__img.hidden,
+.project__display--right.hidden,
+.project__display.hidden,
 .certificates.hidden {
     opacity: 0;
     filter: blur(2px);
@@ -1074,6 +1076,7 @@ textarea.input {
     transition: all 2s cubic-bezier(.5, 0, .5, 1);
 }
 
+.project__details--left.hidden,
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -1081,21 +1084,8 @@ textarea.input {
     transition: all 1250ms cubic-bezier(.5, 0, .5, 1);
 }
 
-@media (min-width: 750px) {
-    .project__details--left.hidden {
-        opacity: 0;
-        filter: blur(5px);
-        transform: translateX(-100%);
-        transition: all 1250ms cubic-bezier(.5, 0, .5, 1);
-    }
-
-    .project__display--right.hidden {
-        transform: translateX(100%);
-    }
-}
-
-
 .service:nth-child(2).show,
+.project__display.show,
 .project__display--right.show,
 .project__details.show,
 .about-me__img.show,
