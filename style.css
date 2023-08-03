@@ -37,7 +37,8 @@
 @media (max-width: 400px) {
     :root {
         --fs-h1: 1.62rem;
-}
+        --fs-h3: 1rem;
+    }
 }
 
 @media (min-width: 500px) {
