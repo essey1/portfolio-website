@@ -372,6 +372,12 @@ header {
     }
 }
 
+@media (max-width: 500px) {
+    .section__title--intro {
+        margin: 3.5em 0 .35em;
+    }
+}
+
 .section__title--intro strong {
     display: inline-block;
 }
