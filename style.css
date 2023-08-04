@@ -1069,13 +1069,12 @@ textarea.input {
 
 .service:nth-child(2).hidden,
 .project__details.hidden,
+.project__display--right.hidden,
 .footer__contact--form.hidden {
     transform: translateX(100%);
 }
 
 .about-me__img.hidden,
-.project__display--right.hidden,
-.project__display.hidden,
 .certificates.hidden {
     opacity: 0;
     filter: blur(2px);
@@ -1091,8 +1090,32 @@ textarea.input {
     transition: all 1250ms cubic-bezier(.5, 0, .5, 1);
 }
 
+@media (max-width: 750px) {
+    .service:nth-child(2).hidden,
+    .project__details.hidden,
+    .project__details--left.hidden,
+    .footer__contact--form.hidden {
+        transform: translateX(10%);
+    }
+
+    .about-me__img.hidden,
+    .certificates.hidden {
+        opacity: 0;
+        filter: blur(2px);
+        transform: translateX(0);
+        transition: all 1s cubic-bezier(.5, 0, .5, 1);
+    }
+
+    .project__display--right.hidden,
+    .hidden {
+        opacity: 0;
+        filter: blur(1px);
+        transform: translateX(-10%);
+        transition: all 1s cubic-bezier(.5, 0, .5, 1);
+    }
+}
+
 .service:nth-child(2).show,
-.project__display.show,
 .project__display--right.show,
 .project__details.show,
 .about-me__img.show,
