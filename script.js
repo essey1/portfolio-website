@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const typed = new Typed(".typewriter", {
   strings: ["snkjfnks", "fghnfghngfsdf", "dfghdbsdf"],
-  typeSpeed: 150,
+  typeSpeed: 100,
   backSpeed: 50,
   loop: true
 })
