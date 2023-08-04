@@ -1109,7 +1109,7 @@ textarea.input {
     .project__display--right.hidden,
     .hidden {
         opacity: 0;
-        filter: blur(1px);
+        filter: blur(0px);
         transform: translateX(-10%);
         transition: all 1s cubic-bezier(.5, 0, .5, 1);
     }
