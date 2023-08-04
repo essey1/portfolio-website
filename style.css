@@ -45,7 +45,7 @@
     :root {
         --fs-h1: 2.5rem;
         --fs-h2: 1.75rem;
-        --fs-h3: 1.3rem;
+        --fs-h3: 1.5rem;
         --fs-body: 1.05rem;
     }
 }
@@ -54,7 +54,7 @@
     :root {
         --fs-h1: 3.5rem;
         --fs-h2: 2.25rem;
-        --fs-h3: 1.6rem;
+        --fs-h3: 1.75rem;
         --fs-body: 1.125rem;
     }
 }
@@ -363,12 +363,12 @@ header {
 .section__title--intro {
     font-size: var(--fs-h1);
     font-weight: var(--fw-medium);
-    margin-top: 1.75em;
+    margin-top: 2em;
 }
 
-@media (max-width: 849px) {
+@media (max-width: 850px) {
     .section__title--intro {
-        margin: 2em 0 .25em;
+        margin: 3em 0 .25em;
     }
 }
 
@@ -416,7 +416,7 @@ header {
     }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 650px) {
     .intro__buttons {
         max-width: 500px;
     }
@@ -696,6 +696,7 @@ header {
 
 .section__subtitle--about {
     background: var(--clr-light-accent);
+    border-radius: .1em;
     font-family: var(--ff-primary);
     display: inline-flex;
     align-items: center;
