@@ -245,7 +245,7 @@ header {
         border-top-left-radius: 1.5em;
     
         transform: translateX(100%);
-        transition: transform 150ms cubic-bezier(.5, 0, .5, 1);
+        transition: transform 600ms cubic-bezier(.5, 0, .5, 1);
     }
     
     .nav__list {
@@ -282,7 +282,7 @@ header {
     }
     
     .nav-open .nav {
-        transform: translateX(25vw);
+        transform: translateX(25%);
     }
     
     .nav-open .nav-toggle {
@@ -1071,7 +1071,7 @@ textarea.input {
 .project__details.hidden,
 .project__display--right.hidden,
 .footer__contact--form.hidden {
-    transform: translateX(50%);
+    transform: translateX(25%);
 }
 
 .about-me__img.hidden,
@@ -1086,7 +1086,7 @@ textarea.input {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-50%);
+    transform: translateX(-25%);
     transition: all 1250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -1095,7 +1095,7 @@ textarea.input {
     .project__details.hidden,
     .project__details--left.hidden,
     .footer__contact--form.hidden {
-        transform: translateX(10%);
+        transform: translateX(5%);
     }
 
     .about-me__img.hidden,
@@ -1110,7 +1110,7 @@ textarea.input {
     .hidden {
         opacity: 0;
         filter: blur(0px);
-        transform: translateX(-10%);
+        transform: translateX(-5%);
         transition: all 1s cubic-bezier(.5, 0, .5, 1);
     }
 }
@@ -1151,6 +1151,32 @@ textarea.input {
     transition-delay: 1500ms;
 }
 
+@media (max-width: 750px) {
+    .intro__buttons--item {
+        transition-delay: 750ms;
+    }
+    
+    .intro__buttons--item:nth-child(2) {
+        transition-delay: 1000ms;
+    }
+    
+    .intro__buttons--item:nth-child(3) {
+        transition-delay: 1250ms;
+    }
+    
+    .intro__social-list__item {
+        transition-delay: 1500ms;
+    }
+    
+    .intro__social-list__item:nth-child(2) {
+        transition-delay: 1750ms;
+    }
+    
+    .intro__social-list__item:nth-child(3) {
+        transition-delay: 2000ms;
+    }
+}
+
 .about-me__img {
     transition: all 1500ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -1178,8 +1204,27 @@ textarea.input {
 } */
 
 @media (prefers-reduced-motion) {
+    .service:nth-child(2).hidden,
+    .project__details.hidden,
+    .project__display--right.hidden,
+    .footer__contact--form.hidden {
+        transform: translateX(0);
+    }
+
+    .about-me__img.hidden,
+    .certificates.hidden {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+        transition: all 150ms cubic-bezier(.5, 0, .5, 1);
+    }
+
+    .project__display--right.hidden,
+    .project__details--left.hidden,
     .hidden {
-        transform: translateX(0%);
-        transition: all 100ms cubic-bezier(.5, 0, .5, 1);
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+        transition: all 150ms cubic-bezier(.5, 0, .5, 1);
     }
 }
