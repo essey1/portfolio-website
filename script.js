@@ -63,6 +63,10 @@ formToReset.addEventListener('submit', (e) => {
 
 // On scroll animations
 document.addEventListener("DOMContentLoaded", () => {
+  const options = {
+    threshold: 0.5,
+  }
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       console.log(entry)
@@ -70,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         entry.target.classList.add("show");
       }
     });
-  });
+  }, options);
   
   const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((el) => observer.observe(el));

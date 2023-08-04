@@ -1071,7 +1071,7 @@ textarea.input {
 .project__details.hidden,
 .project__display--right.hidden,
 .footer__contact--form.hidden {
-    transform: translateX(100%);
+    transform: translateX(50%);
 }
 
 .about-me__img.hidden,
@@ -1086,7 +1086,7 @@ textarea.input {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     transition: all 1250ms cubic-bezier(.5, 0, .5, 1);
 }
 
