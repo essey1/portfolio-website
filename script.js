@@ -79,3 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const hiddenElements = document.querySelectorAll(".hidden");
   hiddenElements.forEach((el) => observer.observe(el));
 })
+
+const typed = new Typed(".typewriter", {
+  strings: ["snkjfnks", "fghnfghngfsdf", "dfghdbsdf"],
+  typeSpeed: 150,
+  backSpeed: 50,
+  loop: true
+})

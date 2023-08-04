@@ -697,6 +697,16 @@ header {
 .section__subtitle--about {
     background: var(--clr-light-accent);
     font-family: var(--ff-primary);
+    display: inline-flex;
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 3em);
+    padding-left: 1.5em;
+    padding-right: calc(200px + 4em);
+    
 }
 
 .about-me__img {
@@ -719,19 +729,9 @@ header {
         grid-area: title;
     }
 
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-
     .about-me__img {
         grid-area: img;
-        margin-top: 5.5em;
+        margin-top: 4.75em;
         position: relative;
         z-index: 2;
     }
@@ -1071,7 +1071,7 @@ textarea.input {
 .project__details.hidden,
 .project__display--right.hidden,
 .footer__contact--form.hidden {
-    transform: translateX(25%);
+    transform: translateX(35%);
 }
 
 .about-me__img.hidden,
@@ -1086,8 +1086,8 @@ textarea.input {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-25%);
-    transition: all 1250ms cubic-bezier(.5, 0, .5, 1);
+    transform: translateX(-35%);
+    transition: all 1s cubic-bezier(.5, 0, .5, 1);
 }
 
 @media (max-width: 750px) {
@@ -1128,27 +1128,27 @@ textarea.input {
 }
 
 .intro__buttons--item {
-    transition-delay: 1000ms;
+    transition-delay: 750ms;
 }
 
 .intro__buttons--item:nth-child(2) {
-    transition-delay: 1250ms;
-}
-
-.intro__buttons--item:nth-child(3) {
-    transition-delay: 1500ms;
-}
-
-.intro__social-list__item {
     transition-delay: 1000ms;
 }
 
-.intro__social-list__item:nth-child(2) {
+.intro__buttons--item:nth-child(3) {
     transition-delay: 1250ms;
 }
 
+.intro__social-list__item {
+    transition-delay: 750ms;
+}
+
+.intro__social-list__item:nth-child(2) {
+    transition-delay: 1000ms;
+}
+
 .intro__social-list__item:nth-child(3) {
-    transition-delay: 1500ms;
+    transition-delay: 1250ms;
 }
 
 @media (max-width: 750px) {
