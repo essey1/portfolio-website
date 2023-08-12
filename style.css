@@ -1098,7 +1098,12 @@ textarea.input {
 
 @media (max-width: 700px) {
     .skill:nth-child(2).hidden,
-    .skill:nth-child(4).hidden,
+    .skill:nth-child(4).hidden {
+        transform: translateX(5%);
+    }
+}
+
+@media (max-width: 750px) {
     .project__details.hidden,
     .project__details--left.hidden,
     .footer__contact--form.hidden {
@@ -1159,19 +1164,7 @@ textarea.input {
     transition-delay: 1250ms;
 }
 
-.skill:nth-child(2) {
-    transition-delay: 150ms;
-}
-
-.skill:nth-child(3) {
-    transition-delay: 300ms;
-}
-
-.skill:nth-child(4) {
-    transition-delay: 300ms;
-}
-
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .intro__buttons--item {
         transition-delay: 750ms;
     }
@@ -1195,7 +1188,21 @@ textarea.input {
     .intro__social-list__item:nth-child(3) {
         transition-delay: 2000ms;
     }
+}
 
+.skill:nth-child(2) {
+    transition-delay: 150ms;
+}
+
+.skill:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.skill:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+@media (max-width: 700px) {
     .skill:nth-child(2),
     .skill:nth-child(3),
     .skill:nth-child(4) {
