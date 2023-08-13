@@ -510,7 +510,7 @@ header {
     font-size: var(--fs-h2);
     font-family: var(--ff-title);
     font-weight: var(--fw-bold);
-    margin: 0 1em 2em 0;
+    margin: 0 0 2em;
 }
 
 .section__title--skills::after {
