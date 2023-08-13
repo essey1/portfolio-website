@@ -510,7 +510,7 @@ header {
     font-size: var(--fs-h2);
     font-family: var(--ff-title);
     font-weight: var(--fw-bold);
-    margin: 0 0 2em;
+    margin: 0;
 }
 
 .section__title--skills::after {
@@ -518,13 +518,13 @@ header {
     display: block;
     width: 2em;
     height: 1px;
-    margin: .5em auto 1em;
+    margin: .5em auto 1.5em;
     background: currentColor;
     opacity: 0.5;
 }
 
 .skill {
-    max-width: 300px;
+    max-width: 280px;
     margin: 0 auto 3em;
 }
 
@@ -536,8 +536,16 @@ header {
 .skill__img--v,
 .skill__img--b,
 .skill__img--d {
-    max-width: 48px;
+    max-width: 46px;
     margin: 0 .25em;
+}
+
+.nodejs {
+    max-width: 80px;
+}
+
+.matplotlib {
+    max-width: 120px;
 }
 
 @media (min-width: 500px) {
@@ -551,11 +559,12 @@ header {
     }
     
     .skill {
+        min-width: 140px;
         max-width: 200px;
         margin: 0 auto;
         padding: .5em .5em 0 .5em;
         margin: 0 .5em 2em;
-    }
+    }    
 }
 
 /* My projects section */
