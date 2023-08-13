@@ -85,7 +85,7 @@ body {
     font-weight: var(--fw-light);
     line-height: 1.5;
     background: var(--clr-white);
-    letter-spacing: .5px;
+    letter-spacing: .03rem;
 }
 
 section {
