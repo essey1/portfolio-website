@@ -541,7 +541,7 @@ header {
 }
 
 .nodejs {
-    max-width: 80px;
+    max-width: 90px;
 }
 
 .matplotlib {
@@ -559,7 +559,7 @@ header {
     }
     
     .skill {
-        min-width: 140px;
+        min-width: 142px;
         max-width: 200px;
         margin: 0 auto;
         padding: .5em .5em 0 .5em;
