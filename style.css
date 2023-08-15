@@ -740,6 +740,7 @@ header {
 .about-me__img {
     box-shadow: var(--bs);
     transition-delay: 250ms;
+    border-radius: .1em;
 }
 
 @media (min-width: 650px) {
