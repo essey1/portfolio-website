@@ -541,7 +541,7 @@ header {
 }
 
 .nodejs {
-    max-width: 90px;
+    max-width: 85px;
 }
 
 .matplotlib {
@@ -1107,7 +1107,7 @@ textarea.input {
     opacity: 0;
     filter: blur(2px);
     transform: translateX(0);
-    transition: all 2s cubic-bezier(.5, 0, .5, 1);
+    transition: all 1500ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .project__details--left.hidden,
@@ -1125,14 +1125,6 @@ textarea.input {
     .project__details--left.hidden,
     .footer__contact--form.hidden {
         transform: translateX(5%);
-    }
-
-    .about-me__img.hidden,
-    .certificates.hidden {
-        opacity: 0;
-        filter: blur(2px);
-        transform: translateX(0);
-        transition: all 1s cubic-bezier(.5, 0, .5, 1);
     }
 
     .project__display--right.hidden,
@@ -1156,40 +1148,40 @@ textarea.input {
 }
 
 .intro__buttons--item {
-    transition-delay: 750ms;
+    transition-delay: 500ms;
 }
 
 .intro__buttons--item:nth-child(2) {
-    transition-delay: 1000ms;
-}
-
-.intro__buttons--item:nth-child(3) {
-    transition-delay: 1250ms;
-}
-
-.intro__social-list__item {
     transition-delay: 750ms;
 }
 
-.intro__social-list__item:nth-child(2) {
+.intro__buttons--item:nth-child(3) {
     transition-delay: 1000ms;
 }
 
+.intro__social-list__item {
+    transition-delay: 1500ms;
+}
+
+.intro__social-list__item:nth-child(2) {
+    transition-delay: 1750ms;
+}
+
 .intro__social-list__item:nth-child(3) {
-    transition-delay: 1250ms;
+    transition-delay: 2000ms;
 }
 
 @media (max-width: 750px) {
     .intro__buttons--item {
-        transition-delay: 750ms;
+        transition-delay: 500ms;
     }
     
     .intro__buttons--item:nth-child(2) {
-        transition-delay: 1000ms;
+        transition-delay: 750ms;
     }
     
     .intro__buttons--item:nth-child(3) {
-        transition-delay: 1250ms;
+        transition-delay: 1000ms;
     }
     
     .intro__social-list__item {
@@ -1205,45 +1197,45 @@ textarea.input {
     }
 }
 
-.skill__img--f:nth-child(3) {
-    transition-delay: 250ms;
-}
-
-.skill__img--f:nth-child(4) {
-    transition-delay: 500ms;
-}
-
 .skill__img--v:nth-child(3) {
     transition-delay: 250ms;
 }
-
 .skill__img--v:nth-child(4) {
     transition-delay: 500ms;
 }
 
-.skill__img--b:nth-child(3) {
+.skill__img--f:nth-child(3) {
     transition-delay: 250ms;
 }
-
-.skill__img--b:nth-child(4) {
+.skill__img--f:nth-child(4) {
     transition-delay: 500ms;
+}
+.skill__img--f:nth-child(5) {
+    transition-delay: 750ms;
+}
+.skill__img--f:nth-child(6) {
+    transition-delay: 1000ms;
+}
+.skill__img--f:nth-child(7) {
+    transition-delay: 1250ms;
+}
+.skill__img--f:nth-child(8) {
+    transition-delay: 1500ms;
 }
 
 .skill__img--d:nth-child(3) {
     transition-delay: 250ms;
 }
-
 .skill__img--d:nth-child(4) {
     transition-delay: 500ms;
 }
-
-@media (max-width: 700px) {
-    .skill:nth-child(2),
-    .skill:nth-child(3),
-    .skill:nth-child(4) {
-        transition-delay: 0ms;
-    }
+.skill__img--d:nth-child(5) {
+    transition-delay: 750ms;
 }
+.skill__img--d:nth-child(6) {
+    transition-delay: 1000ms;
+}
+
 
 .about-me__img {
     transition: all 1500ms cubic-bezier(.5, 0, .5, 1);
