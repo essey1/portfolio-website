@@ -214,7 +214,7 @@ header {
 /* Active link */
 .active-link {
     position: relative;
-    color: var(--clr-accent);
+    color: var(--clr-light-accent);
 }
 .active-link::after {
     content: '';
@@ -223,7 +223,7 @@ header {
     left: 0;
     width: 45%;
     height: 1px;
-    background-color: var(--clr-accent);
+    background-color: var(--clr-light-accent);
     opacity: 0.5;
 }
 
