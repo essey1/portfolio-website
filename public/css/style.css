@@ -204,11 +204,7 @@ header {
 }
 
 .nav__link:hover {
-    opacity: .5;
-}
-
-.nav__link:active {
-    opacity: 75;
+    opacity: .75;
 }
 
 .nav-toggle {
