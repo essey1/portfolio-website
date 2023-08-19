@@ -214,6 +214,20 @@ header {
     display: none;
 }
 
+/* Active link */
+.active-link {
+    position: relative;
+    color: var(--clr-light-accent);
+}
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -.1em;
+    left: 0;
+    width: 50%;
+    height: .01rem;
+    background-color: var(--clr-light-accent);
+}
 
 @media (max-width: 800px) {
     header {

@@ -12,7 +12,7 @@ navLinks.forEach(link => {
     })
 })
 
-// SCROLL SECTIONS ACTIVE LINK
+// Scroll sections active link
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -24,9 +24,9 @@ function scrollActive(){
               sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.nav a[href*=' + sectionId + ']').classList.add('active-link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            document.querySelector('.nav a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
 }
