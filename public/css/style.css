@@ -224,7 +224,7 @@ header {
     position: absolute;
     bottom: -.1em;
     left: 0;
-    width: 50%;
+    width: 45%;
     height: .01rem;
     background-color: var(--clr-light-accent);
 }
@@ -246,7 +246,7 @@ header {
     .nav {
         position: fixed;
         background: var(--clr-dark-accent);
-        background-image: url("sun-tornado1.svg");
+        background-image: url("../img/sun-tornado1.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -268,7 +268,6 @@ header {
         display: flex;
         height: 100%;
         flex-direction: column;
-        line-height: 3;
         align-items: start;
         margin: 0 0 0 10%;
         margin-top: 4em;
@@ -280,7 +279,7 @@ header {
     }
     
     .nav__link {        
-        margin-bottom: 2.5vh;
+        margin-bottom: 6vh;
         margin-top: 0;
         font-weight: var(--fw-medium);
     }
@@ -353,7 +352,7 @@ header {
     align-content: center;
     overflow: hidden;
     background-color: var(--clr-dark);
-    background-image: url("sun-tornado.svg");
+    background-image: url("../img/sun-tornado.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -586,7 +585,7 @@ header {
 .my-projects {
     color: var(--clr-light-grey);
     background-color: var(--clr-dark);
-    background-image: url("sun-tornado.svg");
+    background-image: url("../img/sun-tornado.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -784,7 +783,7 @@ header {
 
 .achievements {
     background-color: var(--clr-dark);
-    background-image: url("sun-tornado.svg");
+    background-image: url("../img/sun-tornado.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1094,21 +1093,20 @@ textarea.input {
 /* Scroll styles and animations */
 
 ::-webkit-scrollbar {
-    width: .4em;
-    height: .4em;
+    width: .35em;
 }
   
 ::-webkit-scrollbar-track {
-    background: #6e877d;
+    background: var(--clr-dark-accent);
 }
   
 ::-webkit-scrollbar-thumb {
-    background: #00492b;
-    border-radius: .5em;
+    background: var(--clr-light-accent);
+    border-radius: .25em;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: #00492b90;
+    background: #91b9ac98;
 }
 
 .project__details.hidden,
