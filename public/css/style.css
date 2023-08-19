@@ -665,11 +665,12 @@ header {
 .project__title {
     text-align: start;
     font-size: var(--fs-h3);
-    margin-top: 1.25em;
+    margin-top: 1.5em;
 }
 
 .project__description {
     text-align: justify;
+    margin-top: .5em;
 }
 
 @media (min-width: 750px) {
@@ -684,6 +685,10 @@ header {
 
     .project__img {
         min-width: 350px;
+    }
+
+    .project__title {
+        margin-top: 1.25em;
     }
 
     .project__details {
