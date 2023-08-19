@@ -14,9 +14,10 @@
     --ff-text: 'Roboto', sans-serif;
     --ff-title: 'Merriweather', sans-serif;
 
-    --fw-light: 350;
-    --fw-medium: 550;
-    --fw-bold: 800;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 500;
+    --fw-bolder: 800;
 
     --clr-dark: #030302;
     --clr-white: #ffffff;
@@ -78,7 +79,7 @@ html {
 
 body {
     overflow-x: clip;
-    color: var(--clr-dark);
+    color: #000;
     margin: 0;
     font-family: var(--ff-text);
     font-size: var(--fs-body);
@@ -104,7 +105,7 @@ img {
 }
 
 strong { 
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-bolder);
     text-align: center;
 }
 
@@ -135,7 +136,7 @@ h1 { font-size: var(--fs-h1); }
 h2 { font-size: var(--fs-h2); }
 h3 {
     font-size: var(--fs-body);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-bold);
 }
 
 .section__title {
@@ -195,7 +196,7 @@ header {
     color: inherit;
     text-decoration: none;
     display: block;
-    font-weight: var(--fw-light);
+    font-weight: var(--fw-regular);
     font-size: var(--fs-body);
     transition:
         150ms cubic-bezier(.5, 0, .5, 1), 
@@ -225,8 +226,9 @@ header {
     bottom: -.1em;
     left: 0;
     width: 45%;
-    height: .01rem;
+    height: 1px;
     background-color: var(--clr-light-accent);
+    opacity: 0.5;
 }
 
 @media (max-width: 800px) {
@@ -281,7 +283,7 @@ header {
     .nav__link {        
         margin-bottom: 6vh;
         margin-top: 0;
-        font-weight: var(--fw-medium);
+        font-weight: var(--fw-bold);
     }
     
     .nav-toggle {
@@ -357,6 +359,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--clr-light-grey);
+    font-weight: var(--fw-regular);
     text-align: center;
 }
 
@@ -376,7 +379,7 @@ header {
 
 .section__title--intro {
     font-size: var(--fs-h1);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-bolder);
     margin-top: 2em;
 }
 
@@ -522,7 +525,7 @@ header {
     padding: 0;
     font-size: var(--fs-h2);
     font-family: var(--ff-title);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-bolder);
     margin: 0;
 }
 
@@ -598,7 +601,7 @@ header {
     position: relative;
     font-size: var(--fs-h2);
     font-family: var(--ff-title);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-bolder);
     margin-bottom: 2em;
 }
 
@@ -609,7 +612,7 @@ header {
     height: 1px;
     margin: 0.5em auto 1em;
     background: currentColor;
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 .project {
@@ -731,7 +734,7 @@ header {
     height: 1px;
     margin: 0.5em auto 1em;
     background: currentColor;
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 .section__subtitle--about {
@@ -795,7 +798,7 @@ header {
 .section__title--achievements {
     font-size: var(--fs-h2);
     font-family: var(--ff-title);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-bolder);
     color: var(--clr-light-accent);
 }
 
@@ -806,7 +809,7 @@ header {
     height: 1px;
     margin: 0.5em auto 1em;
     background: currentColor;
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 .section__subtitle--achievements {
@@ -915,7 +918,7 @@ header {
 .section__title--contact {
     text-align: center;
     margin-bottom: .25em;
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-bolder);
     font-family: var(--ff-title);
     font-size: var(--fs-h2);
     color: var(--clr-dark-accent);
@@ -928,7 +931,7 @@ header {
     height: 1px;
     margin: 0.5em auto 1em;
     background: currentColor;
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 
