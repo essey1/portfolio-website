@@ -448,7 +448,6 @@ header {
     border: 1px solid var(--clr-light-accent);
     outline: 1px solid var(--clr-light-accent);
     outline-offset: -1px;
-    border-radius: .2em;
     padding: .5em .8em;
     margin: .35em;
     transition: outline-offset 200ms ease;
