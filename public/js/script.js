@@ -80,9 +80,20 @@ document.addEventListener("DOMContentLoaded", () => {
   hiddenElements.forEach((el) => observer.observe(el));
 })
 
-const typed = new Typed(".typewriter", {
-  strings: ["snkjfnks", "fghnfghngfsdf", "dfghdbsdf"],
-  typeSpeed: 100,
-  backSpeed: 50,
-  loop: true
-})
+// About me typewriter
+const text = document.querySelector(".typewriter");
+
+const textLoad = () => {
+  setTimeout(() => {
+    text.textContent = "Web Designer";
+  }, 0);
+  setTimeout(() => {
+    text.textContent = "Freelancer";
+  }, 3000);
+  setTimeout(() => {
+    text.textContent = "Front-End Developer";
+  }, 6000);
+}
+
+textLoad();
+setInterval(textLoad, 9000);

@@ -748,8 +748,34 @@ header {
     left: -1.5em;
     width: calc(100% + 3em);
     padding-left: 1.5em;
-    padding-right: calc(200px + 4em);
-    
+    padding-right: calc(200px + 4em); 
+}
+
+.typewriter {
+    position: relative;
+    overflow: hidden;
+    min-width: max-content;
+}
+
+.typewriter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--clr-light-accent);
+    border-left: 2px solid #000;
+    animation: animate 3s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
 }
 
 .about-me__img {
