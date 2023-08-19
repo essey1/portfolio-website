@@ -765,8 +765,8 @@ header {
     height: 100%;
     width: 100%;
     background-color: var(--clr-light-accent);
-    border-left: 2px solid #000;
-    animation: animate 3s steps(12) infinite;
+    border-left: 1px solid #000;
+    animation: animate 3s steps(19) infinite;
 }
 
 @keyframes animate {
