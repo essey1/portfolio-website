@@ -741,6 +741,7 @@ header {
     background: var(--clr-light-accent);
     border-radius: .1em;
     font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
     display: inline-flex;
     align-items: center;
     grid-column: 1 / -1;
