@@ -222,7 +222,7 @@ header {
     bottom: -.1em;
     left: 0;
     width: 45%;
-    height: 1px;
+    height: 2px;
     background-color: var(--clr-light-accent);
     opacity: 0.5;
 }
