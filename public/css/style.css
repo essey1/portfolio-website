@@ -221,7 +221,7 @@ header {
     position: absolute;
     bottom: -.1em;
     left: 0;
-    width: 45%;
+    width: 50%;
     height: 2px;
     background-color: var(--clr-light-accent);
     opacity: 0.5;
