@@ -583,7 +583,7 @@ header {
 .my-projects {
     color: var(--clr-light-grey);
     background-color: var(--clr-dark);
-    background-image: url("../img/sun-tornado.svg");
+    background-image: url("../img/sun-tornado1.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -813,7 +813,7 @@ header {
 
 .achievements {
     background-color: var(--clr-dark);
-    background-image: url("../img/sun-tornado.svg");
+    background-image: url("../img/sun-tornado1.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1066,6 +1066,10 @@ textarea.input {
 .input-container.textarea label {
     top: 0;
     transform: translateY(0);
+}
+
+.input-container span {
+    opacity: .5;
 }
   
 .contact-btn {
