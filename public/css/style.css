@@ -1057,6 +1057,7 @@ textarea.input {
     transform: translateY(-50%);
     font-size: var(--fs-body);
     pointer-events: none;
+    opacity: .6;
     transition: 
         500ms cubic-bezier(.5, 0, .5, 1), 
         opacity 250ms linear;
@@ -1065,10 +1066,6 @@ textarea.input {
 .input-container.textarea label {
     top: 0;
     transform: translateY(0);
-}
-
-.input-container span {
-    opacity: .5;
 }
   
 .contact-btn {
