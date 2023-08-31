@@ -348,6 +348,7 @@ header {
     display: grid;
     align-content: center;
     overflow: hidden;
+    padding-inline: .6em;
     background-color: var(--clr-dark);
     background-image: url("../img/sun-tornado1.svg");
     background-position: center;
