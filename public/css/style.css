@@ -851,7 +851,7 @@ header {
     display: block;
     width: 2em;
     height: 1px;
-    margin: 0.5em auto 1em;
+    margin: 0.5em auto 1.5em;
     background: currentColor;
     opacity: 0.5;
 }
@@ -915,38 +915,38 @@ header {
   
     .certificate__img--1:hover {
         z-index: 8;
-        transform: translate(100%, 50%)
-                 scale(3, 2);
+        transform: translate(50%, 50%)
+                 scale(2, 2);
     }
 
     .certificate__img--2:hover {
         z-index: 8;
         transform: translate(0%, 50%)
-                 scale(3, 2);
+                 scale(2, 2);
     }
 
     .certificate__img--3:hover {
         z-index: 8;
-        transform: translate(-100%, 50%)
-                 scale(3, 2);
+        transform: translate(-50%, 50%)
+                 scale(2, 2);
     }
 
     .certificate__img--4:hover {
         z-index: 8;
-        transform: translate(100%, -50%)
-                 scale(3, 2);
+        transform: translate(50%, -50%)
+                 scale(2, 2);
     }
 
     .certificate__img--5:hover {
         z-index: 8;
         transform: translate(0%, -50%)
-                 scale(3, 2);
+                 scale(2, 2);
     }
 
     .certificate__img--6:hover {
         z-index: 8;
-        transform: translate(-100%, -50%)
-                 scale(3, 2);
+        transform: translate(-50%, -50%)
+                 scale(2, 2);
     }
   }
 
