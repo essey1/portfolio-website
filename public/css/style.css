@@ -24,7 +24,7 @@
     --clr-light-grey: #eeeeee;
     --clr-dark-accent: #0d2a20;
     --clr-accent: #1b8250;
-    --clr-light-accent: #91b9ac;
+    --clr-light-accent: #b2d1c7;
 
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
@@ -102,11 +102,6 @@ section {
 
 img {
     max-width: 100%;
-}
-
-strong { 
-    font-weight: var(--fw-bolder);
-    text-align: center;
 }
 
 /* Typography */
@@ -377,14 +372,14 @@ header {
     font-size: var(--fs-h1);
     font-weight: var(--fw-bolder);
     margin-top: 2em;
-    background: linear-gradient(#d48236, #fff);
+    /* background: linear-gradient(#d48236, #fff);
     background: -webkit-linear-gradient(#d48236, #fff);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
 }
 
 @media (max-width: 850px) {
@@ -413,16 +408,16 @@ header {
     margin: 0 auto;
     padding: 0 0 .75em 0;
     margin-bottom: 1.75em;
-    border-bottom: 1px solid #fdebdc;
+    border-bottom: 1px solid var(--clr-light-accent);
 
-    background: linear-gradient(135deg, #ffe8d5, #fff);
+    /* background: linear-gradient(135deg, #ffe8d5, #fff);
     background: -webkit-linear-gradient(135deg, #ffe8d5, #fff);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
 }
 
 @media (max-width: 900px) {
