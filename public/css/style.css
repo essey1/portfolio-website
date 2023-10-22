@@ -650,7 +650,7 @@ header {
 
 .project__img:hover,
 .project__items:focus .project__img {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.025, 1.025);
     opacity: .9;
 }
 
