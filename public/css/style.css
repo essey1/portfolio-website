@@ -23,8 +23,8 @@
     --clr-white: #ffffff;
     --clr-light-grey: #eeeeee;
     --clr-dark-accent: #0d2a20;
-    --clr-accent: #038c4a;
-    --clr-light-accent: #a6d7c8;
+    --clr-accent: #038144;
+    --clr-light-accent: #9cd0c1;
 
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
@@ -667,7 +667,7 @@ header {
 
 .project__links a {
     text-decoration: none;
-    color: var(--clr-light-grey);
+    color: var(--clr-white);
     background-color: var(--clr-accent);
     border: 1px solid var(--clr-dark-accent);
     border-radius: .25em;
@@ -675,7 +675,7 @@ header {
     margin: 0 .5em 0 0;
     transition:
         transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
+        opacity 150ms linear;
 }
 
 .project__links a:hover {
@@ -1108,7 +1108,7 @@ textarea.input {
     cursor: pointer;
     transition:
         250ms cubic-bezier(.5, 0, .5, 1), 
-        opacity 250ms linear;
+        opacity 150ms linear;
     margin: .5em 0;
 }
   
