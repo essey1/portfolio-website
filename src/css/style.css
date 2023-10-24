@@ -239,7 +239,7 @@ header {
     .nav {
         position: fixed;
         background: var(--clr-dark-accent);
-        background-image: url("../img/sun-tornado1.svg");
+        background-image: url("../../public/img/sun-tornado1.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -345,7 +345,7 @@ header {
     overflow: hidden;
     padding-inline: .6em;
     background-color: var(--clr-dark);
-    background-image: url("../img/sun-tornado1.svg");
+    background-image: url("../../public/img/sun-tornado1.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -607,7 +607,7 @@ header {
 .my-projects {
     color: var(--clr-light-grey);
     background-color: var(--clr-dark);
-    background-image: url("../img/sun-tornado1.svg");
+    background-image: url("../../public/img/sun-tornado1.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -842,7 +842,7 @@ header {
 
 .achievements {
     background-color: var(--clr-dark);
-    background-image: url("../img/sun-tornado1.svg");
+    background-image: url("../../public/img/sun-tornado1.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
